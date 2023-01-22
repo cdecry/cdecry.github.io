@@ -123,6 +123,10 @@
         transform: scale(1.07);
     }
     
+    .name {
+        position: absolute;
+    }
+
     .blurb {
         visibility: hidden;
     }

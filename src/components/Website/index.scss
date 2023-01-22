@@ -59,8 +59,15 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 510px) {
+    .website-card {
+        width: 420px;
+    }
+}
+
+@media only screen and (max-width: 435px) {
     .website-card {
         width: 350px;
     }
 }
+
