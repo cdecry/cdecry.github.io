@@ -3,12 +3,21 @@
     height: 1000px;
     background: #37393E;
     border-radius: 40px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 //responsiveness
 
 @media only screen and (max-width: 1400px) {
     .website-card {
-        margin-top: 70px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .website-card {
+        width: 900px;
     }
 }
