@@ -1,0 +1,9 @@
+nav {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex; /* use flexbox to align items horizontally */
+    justify-content: space-between; /* space out items evenly along the horizontal axis */
+    align-items: center; /* center items vertically */
+}

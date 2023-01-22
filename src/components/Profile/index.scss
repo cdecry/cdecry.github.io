@@ -1,0 +1,95 @@
+.profile-card {
+    padding-top: 90px;
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 320px;
+    height: 350px;
+    background: #37393E;
+    border-radius: 40px;
+    // float: left;
+}
+
+.profile-picture {
+    position: absolute;
+    // transform: translateY(-40%);
+    top: -65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #37393E;
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.profile-picture:hover > .profile-image {
+    transform: scale(1.07);
+}
+
+.profile-picture:hover {
+    transform: translateY(-10%);
+}
+
+.profile-image {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    width: 180%;
+    // transform: translate(-51%, -50%);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.name {
+    font-family: 'winkle';
+    font-size: 45px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.name:hover {
+    letter-spacing: 1.5px;
+}
+
+.blurb {
+    text-align: left;
+    padding: 40px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+
+// responsiveness
+@media only screen and (max-width: 1400px) {
+    .profile-card {
+        padding-top: 50px;
+        top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        width: 900px;
+        height: 70px;
+        // float: left;
+    }
+
+    .profile-picture {
+        position: relative;
+    }
+
+    .name:hover {
+        letter-spacing: normal;
+        transform: translateY(-10%);
+    }
+}

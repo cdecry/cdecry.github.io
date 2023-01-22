@@ -1,0 +1,14 @@
+.website-card {
+    width: 1030px;
+    height: 1000px;
+    background: #37393E;
+    border-radius: 40px;
+}
+
+//responsiveness
+
+@media only screen and (max-width: 1400px) {
+    .website-card {
+        margin-top: 70px;
+    }
+}

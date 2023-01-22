@@ -1,0 +1,57 @@
+.ripple-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 150px;
+    background: none;
+    border: 1px solid rgb(241, 239, 239);;;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.ripple-button:hover {
+    background-color: rgba(211, 184, 232, 0.082);
+    transform: scale(1.07);
+}
+
+.ripple-button:hover > text {
+    font-size: 22px;
+}
+
+.ripple-button > .ripple {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: #8f4ed9;
+    display: block;
+    border-radius: 9999px;
+    opacity: 1;
+    animation: 0.9s ease 1 forwards ripple-effect;
+}
+  
+@keyframes ripple-effect {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(10);
+      opacity: 0.375;
+    }
+    100% {
+      transform: scale(35);
+      opacity: 0;
+    }
+}
+  
+.ripple-button > .content {
+    position: relative;
+    z-index: 2;
+}
