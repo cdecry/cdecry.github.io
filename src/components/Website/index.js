@@ -6,9 +6,12 @@ const Website = () => {
     return (
         <div className='website-card'>
             <NavBar/>
-            <Routes>
-                <Route path="/" element={<>THIS IS THE HOME PAGE</>}/>
-            </Routes>
+            
+                <Routes>
+                    <Route path="/" element={
+                        <div className='website-content'></div>
+                    }/>
+                </Routes>
         </div>
     )
 }

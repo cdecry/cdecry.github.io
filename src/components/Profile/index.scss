@@ -180,3 +180,27 @@
         position: absolute;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .profile-card {
+        width: 200px;
+    }
+
+    .profile-picture {
+        top: -10px;
+        height: 75px;
+        width: 75px;
+    }
+
+    .profile-image {
+        width: 160px;
+    }
+
+    .name {
+        left: 80px;
+    }
+    .name:hover {
+        letter-spacing: normal;
+        transform: translateY(10%);
+    }
+}
