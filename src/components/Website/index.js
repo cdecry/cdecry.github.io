@@ -5,6 +5,7 @@ import htmlIcon from '../../assets/images/html-icon.png';
 import cssIcon from '../../assets/images/css-icon.png';
 import jsIcon from '../../assets/images/js-icon.png';
 import reactIcon from '../../assets/images/react-icon.png';
+import PortfolioItem from '../PortfolioItem';
 
 const Website = () => {
     return (
@@ -51,6 +52,43 @@ const Website = () => {
                             </div>
                             {/* <text className='header'>-welcome-</text> */}
                         </div>
+                    }/>
+                    <Route path="/projects" element={
+                        <div className='website-content'>
+                        <div className="title">
+                            <text className="header">p</text>
+                            <text className="header">r</text>
+                            <text className="header">o</text>
+                            <text className="header">j</text>
+                            <text className="header">e</text>
+                            <text className="header">c</text>
+                            <text className="header">t</text>
+                            <text className="header">s</text>
+                            <text className="header">!</text>
+                        </div>
+                        <text>a portfolio of some of the projects i have worked on in the past:</text><br/>
+                        <div className="grid">
+                            {/* <div className="project"></div>
+                            <div className="project"></div>
+                            <div className="project"></div>
+                            <div className="project"></div>
+                            <div className="project"></div>
+                            <div className="project"></div>
+                            <div className="project"></div>
+                            <div className="project"></div>
+                            <div className="project"></div> */}
+                            <PortfolioItem/>
+                            <PortfolioItem/>
+                            <PortfolioItem/>
+                            <PortfolioItem/>
+                            <PortfolioItem/>
+                            <PortfolioItem/>
+                            <PortfolioItem/>
+                            <PortfolioItem/>
+                            <PortfolioItem/>
+                            <PortfolioItem/>
+                        </div>
+                    </div>
                     }/>
                 </Routes>
         </div>
