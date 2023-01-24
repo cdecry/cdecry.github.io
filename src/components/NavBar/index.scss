@@ -1,5 +1,5 @@
 nav {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     padding-top: 30px;
     padding-left: 100px;
     padding-right: 100px;
@@ -8,6 +8,7 @@ nav {
     align-items: center; /* center items vertically */
     // outline: 4px solid red;
     overflow: hidden;
+    border-bottom: 15px solid rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (max-width: 1100px) {

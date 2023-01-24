@@ -19,6 +19,11 @@
 .ripple-button:hover {
     background-color: rgba(211, 184, 232, 0.082);
     transform: scale(1.07);
+    cursor: url("../../assets/images/purple-cursor/link-select-2.png"), auto;
+}
+
+.ripple-button:active {
+    cursor: url("../../assets/images/purple-cursor/link-select-3.gif"), auto;
 }
 
 .ripple-button:hover > text {
@@ -110,6 +115,22 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .ripple-button {
+        width: 80px;
+        height: 30px;
+    }
+    text {
+        font-size: 11px;
+    }
+    .ripple-button:hover > text {
+        font-size: 11px;
+    }
+    .ripple-button:hover {
+        transform: scale(1.15);
+    }
+}
+
+@media only screen and (max-width: 500px) {
     .ripple-button {
         width: 80px;
         height: 30px;

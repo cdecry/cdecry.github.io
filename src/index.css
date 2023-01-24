@@ -2,9 +2,10 @@ html {
     font-size: 62.5%;
 }
 
-html, body {margin: 0; height: 100%; overflow: hidden}
+html, body {margin: 0; height: 100%; overflow: hidden;}
 
 body {
+    /* pointer-events: none; */
     padding: 1.5vw;
     height: 100vh;
     margin: 0;
@@ -15,4 +16,23 @@ body {
     display: block;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* cursor: url("assets/images/small-purple-cursor/link-select.gif") */
+    cursor: url("assets/images/purple-cursor/normal-select.png"), auto;
 }
+
+a:hover {
+    cursor: url("assets/images/purple-cursor/link-select-2-small.png"), auto;
+}
+a:active {
+    cursor: url("assets/images/purple-cursor/link-select-3.gif"), auto;
+}
+
+::-webkit-scrollbar {
+    width: 0.2em;
+    background-color: transparent;
+}
+
+/* 
+text {
+    cursor: url("assets/images/purple-cursor/texto.png"), auto;
+} */
