@@ -68,25 +68,10 @@ const Website = () => {
                         </div>
                         <text>a portfolio of some of the projects i have worked on in the past:</text><br/>
                         <div className="grid">
-                            {/* <div className="project"></div>
-                            <div className="project"></div>
-                            <div className="project"></div>
-                            <div className="project"></div>
-                            <div className="project"></div>
-                            <div className="project"></div>
-                            <div className="project"></div>
-                            <div className="project"></div>
-                            <div className="project"></div> */}
-                            <PortfolioItem/>
-                            <PortfolioItem/>
-                            <PortfolioItem/>
-                            <PortfolioItem/>
-                            <PortfolioItem/>
-                            <PortfolioItem/>
-                            <PortfolioItem/>
-                            <PortfolioItem/>
-                            <PortfolioItem/>
-                            <PortfolioItem/>
+                            <PortfolioItem title={"Tabs Household Management"} description={"blah blah blah blah blah blah blah"} image={htmlIcon}/>
+                            <PortfolioItem title={"Tabs Household Management"} description={"blah blah blah blah blah blah blah"} image={htmlIcon}/>
+                            <PortfolioItem title={"Tabs Household Management"} description={"blah blah blah blah blah blah blah"} image={htmlIcon}/>
+                            <PortfolioItem title={"Tabs Household Management"} description={"blah blah blah blah blah blah blah"} image={htmlIcon}/>
                         </div>
                     </div>
                     }/>

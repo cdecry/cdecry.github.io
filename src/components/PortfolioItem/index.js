@@ -1,8 +1,19 @@
 import './index.scss';
 
-const PortfolioItem = () => {
+
+
+const PortfolioItem = ({ title, description, image }) => {
+    var itemStyle = {
+        backgroundImage: `url(${image})`
+    };
     return (
-    <div className='item'>
+    <div onClick={console.log("hi")} className='item' style={itemStyle}>
+        <div className="info-cover">
+            <text className='project-title'>{title}</text>
+            <br/>
+            {/* <text className='description'>{description}</text> */}
+        </div>
+        
     </div>
     );
 }

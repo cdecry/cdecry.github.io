@@ -20,6 +20,10 @@ body {
     cursor: url("assets/images/purple-cursor/normal-select.png"), auto;
 }
 
+text::selection {
+    background-color: #8a5ebad0;
+}
+
 a:hover {
     cursor: url("assets/images/purple-cursor/link-select-2-small.png"), auto;
 }

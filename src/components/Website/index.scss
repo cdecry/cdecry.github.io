@@ -1,3 +1,5 @@
+/*#region WEBSITECARD*/
+
 .website-card {
     // overflow: hidden;
     width: 1030px;
@@ -37,8 +39,11 @@
     color: #96d2eb;
     transform: translateY(-15%);
 }
+/*#endregion WEBSITECARD*/
+
 
 /*#region ABOUT*/
+
 .header-tech {
     display: inline-block;
     justify-self: right;
@@ -74,24 +79,24 @@
 /*#endregion ABOUT*/
 
 /*#region PROJECTS*/
+
 .grid {
-    border: 1px solid red;
+    // border: 1px solid red;
     padding: 15px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     gap: 30px;
-    // grid-template-columns: auto auto auto;
+    row-gap: 40px;
 }
 
-.project {
-    border: 1px solid blue;
-    height: 200px;
-    width: 270px;
-}
+// .project {
+//     border: 1px solid blue;
+//     height: 200px;
+//     width: 270px;
+// }
 
 
-//responsiveness
+/*#region RESPONSIVE*/
 
 @media only screen and (max-width: 1400px) {
     .website-card {
@@ -144,4 +149,4 @@
         width: 350px;
     }
 }
-
+/*#endregion RESPONSIVE*/

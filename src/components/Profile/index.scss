@@ -42,6 +42,13 @@
     transform: translateY(-10%);
 }
 
+.profile-picture:active {
+    transform: rotate(3.142rad);
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
 .profile-image {
     width: 260px;
     -webkit-transition: all .3s ease;
