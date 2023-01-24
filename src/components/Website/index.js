@@ -9,7 +9,9 @@ const Website = () => {
             
                 <Routes>
                     <Route path="/" element={
-                        <div className='website-content'></div>
+                        <div className='website-content'>
+                            <text className='headerz'>welcome</text>
+                        </div>
                     }/>
                 </Routes>
         </div>

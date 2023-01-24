@@ -10,7 +10,7 @@ const Profile = () => {
             </div>
 
             <text className="name">crystal huang</text>
-            <text className="blurb">hi! welcome to my "all-in-one" personal page!<br/><br/>my portfolio, blog, and dev notes mashed into a fun website c:<br/><br/>let’s connect:</text>
+            <text className="blurb">blah blah blah blah blah blah blah blah blah blah blah blah blah<br/><br/>blah blah blah blah blah blah blah blah blah blah!</text>
         </div>
     );
 }

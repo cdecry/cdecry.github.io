@@ -11,6 +11,8 @@
     height: 350px;
     background: #37393E;
     border-radius: 40px;
+    // box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     // float: left;
 }
 
@@ -185,9 +187,9 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 510px) {
     .profile-card {
-        width: 200px;
+        width: 250px;
     }
 
     .profile-picture {
@@ -206,5 +208,26 @@
     .name:hover {
         letter-spacing: normal;
         transform: translateY(10%);
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .profile-card {
+        width: 200px;
+    }
+
+    .profile-picture {
+        left: 0px;
+        top: -10px;
+        height: 75px;
+        width: 75px;
+    }
+
+    .profile-image {
+        width: 150px;
+    }
+
+    .name {
+        left: 87px;
     }
 }
