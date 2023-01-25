@@ -6,6 +6,7 @@ import cssIcon from '../../assets/images/css-icon.png';
 import jsIcon from '../../assets/images/js-icon.png';
 import reactIcon from '../../assets/images/react-icon.png';
 import PortfolioItem from '../PortfolioItem';
+import Modal from 'react-bootstrap/Modal';
 
 const Website = () => {
     return (
@@ -27,7 +28,7 @@ const Website = () => {
                             </div>
                             <text>i am a third-year computer science co-op student @ the University of Toronto, passionate about software development, game development, and continous learning.</text>
                             <br/><br/>
-                            <text>the purpose of this website is to allow me to share my projects, hobbies, and interests, while practicing my web development skills by building a responsive, interactive, fun webpage!</text>
+                            <text>the purpose of this website is to allow me to share my projects, hobbies, and interests, while practicing my web development skills by building a responsive, interactive, fun experience!</text>
                             <br/><br/>
                             <div className="title">
                                 {/* <text className="header">-</text> */}
