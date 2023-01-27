@@ -25,7 +25,7 @@ text::selection {
 }
 
 a:hover {
-    cursor: url("assets/images/purple-cursor/link-select-2-small.png"), auto;
+    cursor: url("assets/images/purple-cursor/link-select-2.png"), auto;
 }
 a:active {
     cursor: url("assets/images/purple-cursor/link-select-3.gif"), auto;

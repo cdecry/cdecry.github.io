@@ -11,7 +11,7 @@ const ModalPopup = ({show, onHide, content}) => {
                 <button onClick={onHide} className='close-button'></button>
             </div>
             <div className='modal-body'>
-                <text>THIS IS A POPUP MODAL c:</text>
+                <text>work in progress... 💜</text>
                 {content}
             </div>
             <div className='modal-footer'>

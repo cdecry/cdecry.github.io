@@ -7,8 +7,30 @@ import jsIcon from '../../assets/images/js-icon.png';
 import reactIcon from '../../assets/images/react-icon.png';
 import PortfolioItem from '../PortfolioItem';
 import ModalPopup from '../ModalPopup';
+import tabsSS from '../../assets/images/tabsss.png';
+import sportsSS from '../../assets/images/sports-ss.jpeg';
+import planetSS from '../../assets/images/planet-ss.png';
+import miraiSS from '../../assets/images/mirai2.gif';
+import minionSS from '../../assets/images/minion-ss.png';
+import iPortfolioSS from '../../assets/images/iportfolio-ss.gif';
+import websiteSS from '../../assets/images/website-ss.png';
 
 const Website = () => {
+
+    var tabsProjectBlurb = "Tabs is a comprehensive household management cross-platform mobile app that enhances users' home lives by preventing disorganization, miscommunication, and avoidable situations with their roommates. Users are able to seamlessly manage inventory and finances, create and keep track of schedules and chores, and manage many other accommodations, saving them time and effort.";
+
+    var sportsProjectBlurb = "Sports Venue Scheduler is an innovative and user-friendly android app that streamlines the process of scheduling and joining sports events. Customers can schedule games, join upcoming events and keep track of their scheduled activities all in one convenient location. Admins can manage venues and filter events by venue. It provides a secure login and account system for both customers and admins.";
+
+    var planetProjectBlurb ="A planning & team management Discord bot programmed in C# using the Discord.NET library. Planet is a useful tool that utilizes the TrelloAPI to streamline Trello operations from your Discord team server. User is able to link their Trello account, easily set and change default Trello board to navigate/view, navigate/View Trello boards, lists, cards, and more.";
+
+    var iPortfolioProjectBlurb = "An iPad themed interactive personal website with Angular routing and animations for visually appealing route transitions. Components/layout were designed in Figma with an iPad-inspired theme,  HTML/CSS was used to implement responsive frontend";
+
+    var minionProjectBlurb = "This program uses Python scripts to capture the popular online game League of Legends in real-time and accurately recognize objects within the game. Through the use of OpenCV and machine learning techniques, I trained a cascade classifier to detect minions and their healthbars in the game! This was a fun and educational experience in the fields of computer vision, image processing, and machine learning.";
+
+    var miraiProjectBlurb = "";
+
+    var fantageProjectBlurb = "";
+
     return (
         <div className='website-card'>
             <NavBar/>
@@ -68,12 +90,18 @@ const Website = () => {
                                 <text className="header">s</text>
                                 <text className="header">!</text>
                             </div>
-                            <text>a portfolio of some of the projects i have worked on in the past:</text><br/>
+                            <text>here's a portfolio showcasing a few of the projects i've worked on in the past. it's constantly evolving, so feel free to head over to <a href="https://github.com/cdecry" target="_blank">my GitHub</a> for even more updates!</text><br/>
                             <div className="grid">
-                                <PortfolioItem title={"Tabs Household Management"} description={"blah blah blah blah blah blah blah"} image={htmlIcon}/>
-                                <PortfolioItem title={"Tabs Household Management"} description={"blah blah blah blah blah blah blah"} image={htmlIcon}/>
-                                <PortfolioItem title={"Tabs Household Management"} description={"blah blah blah blah blah blah blah"} image={htmlIcon}/>
-                                <PortfolioItem title={"Tabs Household Management"} description={"blah blah blah blah blah blah blah"} image={htmlIcon}/>
+                                <PortfolioItem title={"Tabs Household Management"} description={tabsProjectBlurb} image={tabsSS}/>
+                                <PortfolioItem title={"Sports Venue Scheduler"} description={sportsProjectBlurb} image={sportsSS}/>
+                                <PortfolioItem title={"Planet Bot"} description={planetProjectBlurb} image={planetSS}/>
+                                
+                                <PortfolioItem title={"LoL Minion Detector"} description={minionProjectBlurb} image={minionSS}/>
+                                <PortfolioItem title={"iPortfolio (old portfolio)"} description={iPortfolioProjectBlurb} image={iPortfolioSS}/>
+                                <PortfolioItem title={"Personal Website (this!)"} description={miraiProjectBlurb} image={websiteSS}/>
+                                <PortfolioItem title={"Mirai Game"} description={miraiProjectBlurb} image={miraiSS}/>
+                                <PortfolioItem title={"Fantage Emulator"} description={fantageProjectBlurb} image={miraiSS}/>
+                                
                             </div>
                         </div>
                         </>

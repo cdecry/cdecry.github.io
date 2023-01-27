@@ -15,14 +15,17 @@
 .item:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px #daceff;
+    cursor: url("../../assets/images/purple-cursor/link-select-2.png"), auto;
 }
+
+.item:active {
+    cursor: url("../../assets/images/purple-cursor/link-select-3.gif"), auto;
+}
+
 
 .item:hover > .info-cover {
-    height: 200px;
+    height: 330px;
 }
-
-// .item:hover > .description {
-// }
 
 .info-cover {
     padding-top: 0px;
