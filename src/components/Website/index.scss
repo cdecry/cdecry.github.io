@@ -2,7 +2,8 @@
 
 .website-card {
     // overflow: hidden;
-    width: 1030px;
+    // width: 1030px;
+    width: calc(100% - 340px);
     // height: 750px;
     height: calc(100vh - 100px);;
     min-height: 400px;
@@ -82,11 +83,13 @@
 
 .grid {
     // border: 1px solid red;
+    justify-content: center;
     padding: 15px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     row-gap: 40px;
+    place-items: center;
 }
 
 a {
@@ -111,6 +114,11 @@ p {
     .website-card {
         width: 900px;
     }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        // gap: 0px;
+    }
 }
 
 @media only screen and (max-width: 950px) {
@@ -128,14 +136,19 @@ p {
 @media only screen and (max-width: 700px) {
     .website-card {
         width: 550px;
-        color: purple;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header {
+        font-size: 55px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .website-card {
         width: 470px;
-        color: purple;
         margin-top: 30px;
     }
 }
