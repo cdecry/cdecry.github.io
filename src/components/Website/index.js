@@ -73,6 +73,7 @@ const Website = () => {
                                 <img className="tech-icon" src={htmlIcon}/>
                                 <img className="tech-icon" src={cssIcon}/>
                             </div>
+                            <a href="/public/Crystal_Huang_Resume.pdf">BOB</a>
                             {/* <text className='header'>-welcome-</text> */}
                         </div>
                     }/>
@@ -100,7 +101,7 @@ const Website = () => {
                                 <PortfolioItem title={"iPortfolio (old portfolio)"} description={iPortfolioProjectBlurb} image={iPortfolioSS}/>
                                 <PortfolioItem title={"Personal Website (this!)"} description={miraiProjectBlurb} image={websiteSS}/>
                                 <PortfolioItem title={"Mirai Game"} description={miraiProjectBlurb} image={miraiSS}/>
-                                <PortfolioItem title={"Fantage Emulator"} description={fantageProjectBlurb} image={miraiSS}/>
+                                <PortfolioItem title={"Fantage Emulator"} description={fantageProjectBlurb} image={htmlIcon}/>
                                 
                             </div>
                         </div>

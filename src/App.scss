@@ -16,7 +16,7 @@ $off-white: #EDE5E0;
     src: url('./assets/fonts/winkle/Winkle-Regular.ttf') format('truetype');
 }
 
-text, p, textarea {
+text, p, textarea, h1, h2, h3, li{
     font-family: 'M PLUS Rounded 1c';
     color: rgb(241, 239, 239);
     font-size: 19px;

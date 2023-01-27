@@ -12,9 +12,9 @@ const NavBar = () => {
             <NavLink exact="true" activeclassname="active" to="/projects">
                 <NavButton page="projects"/>
             </NavLink>
-            <NavLink exact="true" activeclassname="active" to="/resume">
+            <a target="_blank" href="/Crystal_Huang_Resume.pdf">
                 <NavButton page="resume"/>
-            </NavLink>
+            </a>
             <NavLink exact="true" activeclassname="active" to="/art">
                 <NavButton page="art + design"/>
             </NavLink>
