@@ -92,15 +92,15 @@ const Website = () => {
                             </div>
                             <text>here's a portfolio showcasing a few of the projects i've worked on in the past. it's constantly evolving, so feel free to head over to <a href="https://github.com/cdecry" target="_blank">my GitHub</a> for even more updates!</text><br/>
                             <div className="grid">
-                                <PortfolioItem title={"Tabs Household Management"} description={tabsProjectBlurb} image={tabsSS}/>
-                                <PortfolioItem title={"Sports Venue Scheduler"} description={sportsProjectBlurb} image={sportsSS}/>
-                                <PortfolioItem title={"Planet Bot"} description={planetProjectBlurb} image={planetSS}/>
+                                <PortfolioItem title={"Tabs Household Management"} description={tabsProjectBlurb} image={tabsSS} link={"https://github.com/UTSCCSCC01/Tabs"}/>
+                                <PortfolioItem title={"Sports Venue Scheduler"} description={sportsProjectBlurb} image={sportsSS} link={"https://github.com/cdecry/sports-event-scheduler"}/>
+                                <PortfolioItem title={"Planet Bot"} description={planetProjectBlurb} image={planetSS} link={"https://github.com/cdecry/Planet"}/>
                                 
                                 <PortfolioItem title={"LoL Minion Detector"} description={minionProjectBlurb} image={minionSS}/>
-                                <PortfolioItem title={"iPortfolio (old portfolio)"} description={iPortfolioProjectBlurb} image={iPortfolioSS}/>
-                                <PortfolioItem title={"Personal Website (this!)"} description={miraiProjectBlurb} image={websiteSS}/>
-                                <PortfolioItem title={"Mirai Game"} description={miraiProjectBlurb} image={miraiSS}/>
-                                <PortfolioItem title={"Fantage Emulator"} description={fantageProjectBlurb} image={htmlIcon}/>
+                                <PortfolioItem title={"iPortfolio (old portfolio)"} description={iPortfolioProjectBlurb} image={iPortfolioSS} link={"https://github.com/cdecry/iPortfolio"}/>
+                                <PortfolioItem title={"Personal Website (this!)"} description={miraiProjectBlurb} image={websiteSS} link={"https://github.com/cdecry/cdecry.github.io"}/>
+                                <PortfolioItem title={"Mirai Game"} description={miraiProjectBlurb} image={miraiSS} link={"https://github.com/cdecry/Mirai"}/>
+                                <PortfolioItem title={"Fantage Emulator"} description={fantageProjectBlurb} image={htmlIcon} link={"https://github.com/cdecry/FantageSimulator"}/>
                                 
                             </div>
                         </div>

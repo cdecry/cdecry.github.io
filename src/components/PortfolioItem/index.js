@@ -3,7 +3,7 @@ import { Button, Modal } from 'react-bootstrap';
 import { useState } from 'react';
 import ModalPopup from '../ModalPopup';
 
-const PortfolioItem = ({ title, description, image }) => {
+const PortfolioItem = ({ title, description, image, link }) => {
     var itemStyle = {
         backgroundImage: `url(${image})`
     };
@@ -14,6 +14,7 @@ const PortfolioItem = ({ title, description, image }) => {
 
     return (
     <div>
+        <a target="_blank" href={link}>
         <div onClick={handleShow} className='item' style={itemStyle}>
             <div className="info-cover">
                 <text className='project-title'>{title}</text>
@@ -21,10 +22,11 @@ const PortfolioItem = ({ title, description, image }) => {
                 <text className='description'>{description}</text>
             </div>
         </div>
+        </a>
 
-        {
+        {/* {
             show && <ModalPopup onHide={handleClose}/>
-        }
+        } */}
     </div>
     );
 }
