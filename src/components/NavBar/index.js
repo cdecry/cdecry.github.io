@@ -15,9 +15,9 @@ const NavBar = () => {
             <a target="_blank" href="/Crystal_Huang_Resume.pdf">
                 <NavButton page="resume"/>
             </a>
-            <NavLink exact="true" activeclassname="active" to="/art">
+            {/* <NavLink exact="true" activeclassname="active" to="/art">
                 <NavButton page="art + design"/>
-            </NavLink>
+            </NavLink> */}
             <NavLink exact="true" activeclassname="active" to="/journal">
                 <NavButton page="journal"/>
             </NavLink>
