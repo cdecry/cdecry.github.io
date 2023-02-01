@@ -48,7 +48,7 @@ const Website = () => {
                                 <text className="header">!</text>
                                 {/* <text className="header">-</text> */}
                             </div>
-                            <text>i am a third-year computer science co-op student @ the University of Toronto, passionate about software development, game development, and continous learning.</text>
+                            <text>i am a third-year computer science co-op student @ the University of Toronto, passionate about software development and its innovative (and fun) applications. my enthusiasm for exploring new technologies makes me a quick learner! </text>
                             <br/><br/>
                             <text>the purpose of this website is to allow me to share my projects, hobbies, and interests, while practicing my web development skills by building a responsive, interactive, fun experience!</text>
                             <br/><br/>
@@ -73,7 +73,6 @@ const Website = () => {
                                 <img className="tech-icon" src={htmlIcon}/>
                                 <img className="tech-icon" src={cssIcon}/>
                             </div>
-                            <a href="/public/Crystal_Huang_Resume.pdf">BOB</a>
                             {/* <text className='header'>-welcome-</text> */}
                         </div>
                     }/>
@@ -106,6 +105,41 @@ const Website = () => {
                             </div>
                         </div>
                         </>
+                    }/>
+                    <Route path="/art" element={
+                        <div className='website-content'>
+                            <div className="title">
+                                {/* <text className="header">-</text> */}
+                                <text className="header">a</text>
+                                <text className="header">r</text>
+                                <text className="header">t</text>
+                                <text className="header">+</text>
+                                <text className="header">d</text>
+                                <text className="header">e</text>
+                                <text className="header">s</text>
+                                <text className="header">i</text>
+                                <text className="header">g</text>
+                                <text className="header">n</text>
+                                <text className="header">!</text>
+                            </div>
+                            <text>-</text>
+                        </div>
+                    }/>
+                    <Route path="/journal" element={
+                        <div className='website-content'>
+                            <div className="title">
+                                {/* <text className="header">-</text> */}
+                                <text className="header">j</text>
+                                <text className="header">o</text>
+                                <text className="header">u</text>
+                                <text className="header">r</text>
+                                <text className="header">n</text>
+                                <text className="header">a</text>
+                                <text className="header">l</text>
+                                <text className="header">!</text>
+                            </div>
+                            <text>-</text>
+                        </div>
                     }/>
                 </Routes>
         </div>

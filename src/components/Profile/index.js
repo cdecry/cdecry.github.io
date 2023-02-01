@@ -10,7 +10,13 @@ const Profile = () => {
             </div>
 
             <text className="name">crystal huang</text>
-            <text className="blurb">blah blah blah blah blah blah blah blah blah blah blah blah blah<br/><br/>blah blah blah blah blah blah blah blah blah blah!</text>
+            <text className="blurb">
+                welcome to my page! i am currently seeking a summer/spring 2023 internship. c:<br/><br/><a target="_blank" href="https://www.linkedin.com/in/crystalchuang/">LinkedIn</a>
+                <br/>
+                <a target="_blank" href="https://github.com/cdecry">GitHub</a>
+                <br/>
+                crystalc.huang@mail.utoronto.ca
+            </text>
         </div>
     );
 }
