@@ -1,11 +1,17 @@
-import { Card } from '@mantine/core';
+import { ButtonGroup, Button, Card } from '@mantine/core';
 import React from 'react';
 
 const Container = () => {
         return (
         <Card className='container'>
             <Card.Section className='navigation'>
-                Nav
+                <Button className='nav-button'>about me</Button>
+                <Button className='nav-button'>experience</Button>
+                <Button className='nav-button'>projects</Button>
+                <Button className='nav-button'>more</Button>
+            </Card.Section>
+            <Card.Section className='header'>
+                idk
             </Card.Section>
         </Card>
         );
