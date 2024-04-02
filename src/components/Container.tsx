@@ -1,4 +1,4 @@
-import { ButtonGroup, Button, Card } from '@mantine/core';
+import { Image, Button, Card } from '@mantine/core';
 import React from 'react';
 
 const Container = () => {
@@ -11,7 +11,7 @@ const Container = () => {
                 <Button className='nav-button'>more</Button>
             </Card.Section>
             <Card.Section className='header'>
-                idk
+                <Image></Image>
             </Card.Section>
         </Card>
         );
