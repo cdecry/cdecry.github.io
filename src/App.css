@@ -19,20 +19,36 @@
 .navigation {
     /* background-color: red; */
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-top: 30px;
     padding-bottom: 30px;
     /* border: 1px solid red; */
 }
 
 .nav-button {
+    --d:100px;
+    --angle:86deg;
     border-radius: 30px;
     background-color: transparent;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
-    /* border: 1px solid black; */
+    /* box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1); */
+    border: 1px solid rgba(0, 0, 0, 0.2);;
     width: 120px;
     height: 40px;
     color: black;
+}
+
+.nav-button:hover {
+    /* background-image: repeating-linear-gradient(90deg, #a98cedff 0%, #d9c5f2ff 50%, #d9c5f2ff 50%, #a98cedff 100%); */
+    background: repeating-linear-gradient(var(--angle), #a98cedff, #d9c5f2ff, #a98cedff var(--d));
+    background-size: calc(var(--d)/sin(var(--angle))) 100%;
+    animation: slidebg 2s linear infinite reverse;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0);
+}
+
+@keyframes slidebg {
+    0% {
+        background-position: calc(var(--d)/sin(var(--angle))) 0;
+    }
 }
 
 .header {
