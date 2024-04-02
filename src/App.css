@@ -1,23 +1,30 @@
+body {
+    background-color: black;
+}
+
 .App {
     display: flex;
     height: 100vh;
     width: 100vw;
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    /* background-image: linear-gradient(86deg, #573aab 0%, #a194b1 100%); */
+    background-color: #a194b1;
 }
 
 .container {
     flex: 1;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     max-width: calc(76vw - 60px);
     margin-left: 20px;
-    /* margin-right: 2vw; */
+    background-color: #F0F0F0;
 }
 
 .navigation {
-    /* background-color: red; */
     display: flex;
     justify-content: space-evenly;
     padding-top: 30px;
@@ -30,7 +37,6 @@
     --angle:86deg;
     border-radius: 30px;
     background-color: transparent;
-    /* box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1); */
     border: 1px solid rgba(0, 0, 0, 0.2);;
     width: 120px;
     height: 40px;
@@ -38,7 +44,6 @@
 }
 
 .nav-button:hover {
-    /* background-image: repeating-linear-gradient(90deg, #a98cedff 0%, #d9c5f2ff 50%, #d9c5f2ff 50%, #a98cedff 100%); */
     background: repeating-linear-gradient(var(--angle), #a98cedff, #d9c5f2ff, #a98cedff var(--d));
     background-size: calc(var(--d)/sin(var(--angle))) 100%;
     animation: slidebg 2s linear infinite reverse;
@@ -65,7 +70,10 @@
 }
 
 .profile {
+    background-color: #F0F0F0;
+    border-radius: 30px;
+    height: 500px;
     flex: 1;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     max-width: 24vw;
 }
