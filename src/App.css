@@ -19,7 +19,8 @@ body {
     /* border: 1px solid red; */
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    /* max-width: calc(76vw - 80px); */
+    max-width: calc(76vw - 80px);
+    /* min-width: calc(76vw - 80px); */
     margin-left: 20px;
     background-color: #F0F0F0;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -77,6 +78,7 @@ body {
     height: 500px;
     flex: 1;
     /* border: 1px solid red; */
-    max-width: 24vw;
+    min-width: 360px;
+    max-width: 360px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

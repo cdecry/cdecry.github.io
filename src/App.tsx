@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="App">
         <Profile />
-        <Container />
+        <Container/>
     </div>
   );
 }
