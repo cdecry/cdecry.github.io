@@ -3,19 +3,18 @@ import { useState } from "react";
 
 type ButtonComponentProps = {
     name: string;
+    currentTab: string;
     setCurrentTab: (t: string) => void;
 }
 
 const ButtonComponent = (props: ButtonComponentProps) => {
-    const [isActive, setIsActive] = useState(false);
     const handleClick = () => {
-        setIsActive(true);
-        props.setCurrentTab(props.name.split(' ')[0]);
+        props.setCurrentTab(props.name);
     };
 
     return (
         <Button 
-            className='nav-button'
+            className={props.currentTab === props.name ? 'nav-button-active' : 'nav-button'}
             onClick={handleClick}
         >
             {props.name}
