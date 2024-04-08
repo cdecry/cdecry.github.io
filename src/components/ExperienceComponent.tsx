@@ -1,10 +1,20 @@
 import { Text, Space, Timeline, Avatar } from "@mantine/core";
+import { useEffect } from "react";
 const hubspotIcon = require('../images/hubspot-icon.png');
 const dayforceIcon = require('../images/dayforce-icon.png');
 const khergIcon = require('../images/kherg-icon.png');
 const uhnIcon = require('../images/uhn-icon.png');
 
 const ExperienceComponent = () => {
+    useEffect(() => {
+        console.log('boop');
+        const nodes = document.querySelectorAll('.fade-in-node');
+        nodes.forEach((node, index) => {
+            setTimeout(() => {
+              node.classList.add('fade-in');
+            }, (nodes.length - index) * 100); // Adjust the delay to reverse the animation
+        });
+    }, []);
 
     return (
         <div className='tab'>
@@ -13,10 +23,11 @@ const ExperienceComponent = () => {
                 <Text size="xl" fw={800}>
                     &#9135; work experience
                 </Text>
-                <Space h="md" />
+                <Space h="lg" />
                 
-                <Timeline active={2} bulletSize={24} lineWidth={2}>
-                    <Timeline.Item 
+                <Timeline color="#a98cedff" reverseActive active={2} bulletSize={24} lineWidth={6}>
+                    <Timeline.Item
+                        className="fade-in-node"
                         title="HubSpot"
                         bullet={
                             <Avatar className="company-icon" src={hubspotIcon} />
@@ -27,6 +38,7 @@ const ExperienceComponent = () => {
                     </Timeline.Item>
 
                     <Timeline.Item 
+                        className="fade-in-node"
                         title="Dayforce"
                         bullet={
                             <Avatar className="company-icon" src={dayforceIcon} />
@@ -37,6 +49,7 @@ const ExperienceComponent = () => {
                     </Timeline.Item>
 
                     <Timeline.Item 
+                        className="fade-in-node"
                         title="Kidney Health Education and Research Group"
                         bullet={
                             <Avatar className="company-icon" src={khergIcon} />
@@ -47,6 +60,7 @@ const ExperienceComponent = () => {
                     </Timeline.Item>
 
                     <Timeline.Item 
+                        className="fade-in-node"
                         title="University Health Network"
                         bullet={
                             <Avatar className="company-icon" src={uhnIcon} />
