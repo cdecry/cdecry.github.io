@@ -4,6 +4,7 @@ import { useState } from 'react';
 import ContentComponent from './ContentComponent';
 import AboutComponent from './AboutComponent';
 import ExperienceComponent from './ExperienceComponent';
+import ProjectsComponent from './ProjectsComponent';
 
 type ContainerProps = {
     currentTab: string;
@@ -24,6 +25,7 @@ const Container = () => {
 
             {currentTab === 'about me' && <AboutComponent />}
             {currentTab === 'experience' && <ExperienceComponent />}
+            {currentTab === 'projects' && <ProjectsComponent />}
 
         </Card>
         );
