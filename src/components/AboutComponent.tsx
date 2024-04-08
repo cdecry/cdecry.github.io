@@ -22,6 +22,9 @@ const AboutComponent = () => {
             icon.classList.add('scale-animation');
           }, index * 200);
         });
+        icons.forEach((icon, index) => {
+            icon.classList.remove('scale-animation');
+        });
       }, []);
 
     return (

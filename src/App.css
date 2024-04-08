@@ -120,7 +120,7 @@ body {
     margin-left: 5%;
     padding: 10px;
     width: 90%;
-    transition: opacity 1s ease;
+    transition: opacity 0.5s ease;
     opacity: 0;
 }
 
@@ -143,7 +143,7 @@ body {
 }
 
 .made-with-icon {
-    transition: transform 0.2s ease;
+    transition: transform 0.5s ease;
 }
 
 .made-with-icon:hover {
@@ -161,7 +161,7 @@ body {
     50% {
       transform: scale(1.1);
     }
-    100% {
+    99% {
       transform: scale(1);
     }
   }
