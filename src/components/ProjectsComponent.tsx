@@ -4,7 +4,7 @@ const ProjectsComponent = () => {
 
     return (
         <div className='tab'>
-            <div className='header'></div>
+            {/* <div className='header'></div> */}
             <div className='content'>
                 <Text>
                     here's a portfolio showcasing a few of the projects i've worked 

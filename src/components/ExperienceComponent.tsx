@@ -7,7 +7,6 @@ const uhnIcon = require('../images/uhn-icon.png');
 
 const ExperienceComponent = () => {
     useEffect(() => {
-        console.log('boop');
         const nodes = document.querySelectorAll('.fade-in-node');
         nodes.forEach((node, index) => {
             setTimeout(() => {
@@ -18,7 +17,7 @@ const ExperienceComponent = () => {
 
     return (
         <div className='tab'>
-            <div className='header'></div>
+            {/* <div className='header'></div> */}
             <div className='content'>
                 <Text size="xl" fw={800}>
                     &#9135; work experience
@@ -33,7 +32,7 @@ const ExperienceComponent = () => {
                             <Avatar className="company-icon" src={hubspotIcon} />
                         }
                     >
-                        <Text c="dimmed" size="sm">Incoming Software Engineer Intern</Text>
+                        <Text size="sm">Incoming Software Engineer Intern</Text>
                         <Text size="xs" mt={4}>September 2024 - December 2024</Text>
                     </Timeline.Item>
 

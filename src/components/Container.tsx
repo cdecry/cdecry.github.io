@@ -22,6 +22,7 @@ const Container = () => {
                 <ButtonComponent name="more" currentTab={currentTab} setCurrentTab={setCurrentTab}/>
             </Card.Section>
 
+            <div className='header'></div>
             {currentTab === 'about me' && <AboutComponent />}
             {currentTab === 'experience' && <ExperienceComponent />}
             {currentTab === 'projects' && <ProjectsComponent />}

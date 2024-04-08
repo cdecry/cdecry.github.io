@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding-top: 26px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     /* border: 1px solid red; */
 }
 
@@ -95,22 +95,26 @@ body {
     background-image: linear-gradient(86deg, #a98cedff 0%, #d9c5f2ff 100%);
     outline: solid 1px #ffffff78;
     outline-offset: -1px;
-    height: 170px;
+    height: 10px;
     width: 90%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
     margin-left: 5%;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .content {
-    margin-top: 10px;
     margin-left: 5%;
     padding: 10px;
     width: 90%;
+    transition: opacity 1s ease;
     /* border: 1px solid red; */
     /* animation: fadeInAnimation ease 0.5s; */
+}
+
+.content.hidden {
+    opacity: 0;
 }
 
 @keyframes fadeInAnimation {
@@ -134,9 +138,8 @@ body {
 
 .fade-in-node {
     opacity: 0;
-    /* transition: opacity 1s ease; */
-    transform: translateY(5px); /* Start off-screen */
-    transition: opacity 1s ease, transform 0.5s ease; /* Apply transitions */
+    transform: translateY(10px); /* Start off-screen */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Apply transitions */
   }
   
 .fade-in-node.fade-in {
