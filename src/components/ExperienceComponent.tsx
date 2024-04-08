@@ -1,4 +1,5 @@
-import { Text, Space, Timeline } from "@mantine/core";
+import { Text, Space, Timeline, Avatar } from "@mantine/core";
+const hubspotLogo = require('../images/hubspot-logo.png');
 
 const ExperienceComponent = () => {
 
@@ -10,9 +11,13 @@ const ExperienceComponent = () => {
                     &#9135; work experience
                 </Text>
                 <Space h="md" />
+                
                 <Timeline active={2} bulletSize={24} lineWidth={2}>
                     <Timeline.Item 
                         title="HubSpot"
+                        bullet={
+                            <Avatar src={hubspotLogo} />
+                        }
                     >
                         <Text c="dimmed" size="sm">Incoming Software Engineer Intern</Text>
                         <Text size="xs" mt={4}>September 2024 - December 2024</Text>
@@ -26,7 +31,7 @@ const ExperienceComponent = () => {
                     </Timeline.Item>
 
                     <Timeline.Item 
-                        title="KHERG"
+                        title="Kidney Health Education and Research Group"
                     >
                         <Text c="dimmed" size="sm">Software Engineer</Text>
                         <Text size="xs" mt={4}>September 2023 - August 2024</Text>
