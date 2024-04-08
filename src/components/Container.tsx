@@ -22,7 +22,9 @@ const Container = () => {
                 <ButtonComponent name="more" currentTab={currentTab} setCurrentTab={setCurrentTab}/>
             </Card.Section>
 
-            <div className='header'></div>
+            <div className='header'>
+                <Text ta='left' className='header-text'>{currentTab}</Text>
+            </div>
             {currentTab === 'about me' && <AboutComponent />}
             {currentTab === 'experience' && <ExperienceComponent />}
             {currentTab === 'projects' && <ProjectsComponent />}

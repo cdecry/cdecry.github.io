@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'headerFontBold'; /*a name to be used later*/
+    src: url('fonts/M_PLUS_Rounded_1c_Old/MPLUSRounded1c-Medium.ttf'); /*URL to font*/
+}
+
 body {
     background-color: black;
 }
@@ -95,13 +100,20 @@ body {
     background-image: linear-gradient(86deg, #a98cedff 0%, #d9c5f2ff 100%);
     outline: solid 1px #ffffff78;
     outline-offset: -1px;
-    height: 10px;
+    height: 56px;
     width: 90%;
-    /* padding-top: 30px;
-    padding-bottom: 30px; */
+    padding-left: 20px;
     margin-left: 5%;
-    text-align: center;
     border-radius: 10px;
+    user-select: none;
+}
+
+.header-text {
+    font-family: "headerFontBold";
+    font-size: 40px;
+    font-weight: 500;
+    color: #fefefe;
+    margin-top: -5px;
 }
 
 .content {
