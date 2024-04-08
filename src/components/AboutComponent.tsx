@@ -7,6 +7,15 @@ const cssIcon = require('../images/css-icon.png');
 
 
 const AboutComponent = () => {
+    useEffect(() => {
+        const icons = document.querySelectorAll('.made-with-icon');
+    
+        icons.forEach((icon, index) => {
+          setTimeout(() => {
+            icon.classList.add('scale-animation');
+          }, index * 200); // Adjust the delay between each icon animation as needed
+        });
+      }, []);
 
     return (
         <div className='tab'>
@@ -40,6 +49,7 @@ const AboutComponent = () => {
                                 w="auto"
                                 fit="contain"
                                 src={reactIcon}
+                                tabIndex={0}
                             />
                             <Image
                                 className='made-with-icon'
@@ -48,6 +58,7 @@ const AboutComponent = () => {
                                 w="auto"
                                 fit="contain"
                                 src={jsIcon}
+                                tabIndex={0}
                             />
                             <Image
                                 className='made-with-icon'
@@ -56,6 +67,7 @@ const AboutComponent = () => {
                                 w="auto"
                                 fit="contain"
                                 src={htmlIcon}
+                                tabIndex={0}
                             />
                             <Image
                                 className='made-with-icon'
@@ -64,6 +76,7 @@ const AboutComponent = () => {
                                 w="auto"
                                 fit="contain"
                                 src={cssIcon}
+                                tabIndex={0}
                             />
                         </SimpleGrid>
                     </Card>
