@@ -20,10 +20,9 @@ const Container = () => {
                 <ButtonComponent name="more" currentTab={currentTab} setCurrentTab={setCurrentTab}/>
             </Card.Section>
 
-            <Card.Section className='header'>
+            {/* <Card.Section className='header'>
                 <Image></Image>
-            </Card.Section>
-
+            </Card.Section> */}
             <ContentComponent currentTab={currentTab}/>
 
         </Card>
