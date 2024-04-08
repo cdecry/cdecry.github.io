@@ -1,5 +1,9 @@
-import { Avatar, Card, SimpleGrid, Text, ThemeIcon, Timeline } from "@mantine/core";
-import { IconSun, IconVideo, IconHtml } from '@tabler/icons-react';
+import {Card, SimpleGrid, Text, Image, Space } from "@mantine/core";
+const reactIcon = require('../images/react-icon.png');
+const jsIcon = require('../images/js-icon.png');
+const htmlIcon = require('../images/html-icon.png');
+const cssIcon = require('../images/css-icon.png');
+
 
 const AboutComponent = () => {
 
@@ -25,12 +29,38 @@ const AboutComponent = () => {
                         </Text>
                     </div>
                     <Card className='made-with-container'>
-                    <SimpleGrid cols={2} verticalSpacing="sm">
-                        <div>React</div>
-                        <div>HTML5</div>
-                        <div>CSS</div>
-                        <div>TypeScript</div>
-                    </SimpleGrid>
+                        <Text size='xs' c='dimmed'>this website is made with:</Text>
+                        <Space h='xs'/>
+                        <SimpleGrid cols={2} verticalSpacing="xs" spacing="xs">
+                            <Image
+                                radius="md"
+                                h={80}
+                                w="auto"
+                                fit="contain"
+                                src={reactIcon}
+                            />
+                            <Image
+                                radius="md"
+                                h={80}
+                                w="auto"
+                                fit="contain"
+                                src={jsIcon}
+                            />
+                            <Image
+                                radius="md"
+                                h={80}
+                                w="auto"
+                                fit="contain"
+                                src={htmlIcon}
+                            />
+                            <Image
+                                radius="md"
+                                h={80}
+                                w="auto"
+                                fit="contain"
+                                src={cssIcon}
+                            />
+                        </SimpleGrid>
                     </Card>
                 </div>
             </div>
