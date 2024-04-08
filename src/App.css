@@ -122,8 +122,7 @@ body {
     }
 }
 #crystal {
-    font-size: large;
     font-style: normal;
-    font-weight: 500;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: darkorchid;
 }
