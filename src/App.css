@@ -109,7 +109,7 @@ body {
     margin-left: 5%;
     padding: 10px;
     width: 90%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     animation: fadeInAnimation ease 0.5s;
 }
 

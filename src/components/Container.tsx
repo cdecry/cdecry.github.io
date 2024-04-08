@@ -1,7 +1,6 @@
 import { Image, Card, Text } from '@mantine/core';
 import ButtonComponent from './ButtonComponent';
 import { useState } from 'react';
-import ContentComponent from './ContentComponent';
 import AboutComponent from './AboutComponent';
 import ExperienceComponent from './ExperienceComponent';
 import ProjectsComponent from './ProjectsComponent';
