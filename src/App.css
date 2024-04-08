@@ -141,7 +141,14 @@ body {
     margin-left: 10px;
     /* box-shadow: 12px 12px 2px 1px #a194b1; */
     box-shadow: rgba(169, 140, 237, 0.4) 5px 5px, rgba(169, 140, 237, 0.3) 10px 10px, rgba(169, 140, 237, 0.2) 15px 15px, rgba(169, 140, 237, 0.1) 20px 20px, rgba(169, 140, 237, 0.05) 25px 25px;
+}
 
+.made-with-icon {
+    transition: transform 0.2s ease;
+}
+
+.made-with-icon:hover {
+    transform: scale(1.1);
 }
 
 @keyframes fadeInAnimation {

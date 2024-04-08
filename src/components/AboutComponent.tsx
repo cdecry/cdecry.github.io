@@ -1,4 +1,5 @@
 import {Card, SimpleGrid, Text, Image, Space } from "@mantine/core";
+import { useEffect } from "react";
 const reactIcon = require('../images/react-icon.png');
 const jsIcon = require('../images/js-icon.png');
 const htmlIcon = require('../images/html-icon.png');
@@ -33,6 +34,7 @@ const AboutComponent = () => {
                         <Space h='xs'/>
                         <SimpleGrid cols={2} verticalSpacing="xs" spacing="xs">
                             <Image
+                                className='made-with-icon'
                                 radius="md"
                                 h={80}
                                 w="auto"
@@ -40,6 +42,7 @@ const AboutComponent = () => {
                                 src={reactIcon}
                             />
                             <Image
+                                className='made-with-icon'
                                 radius="md"
                                 h={80}
                                 w="auto"
@@ -47,6 +50,7 @@ const AboutComponent = () => {
                                 src={jsIcon}
                             />
                             <Image
+                                className='made-with-icon'
                                 radius="md"
                                 h={80}
                                 w="auto"
@@ -54,6 +58,7 @@ const AboutComponent = () => {
                                 src={htmlIcon}
                             />
                             <Image
+                                className='made-with-icon'
                                 radius="md"
                                 h={80}
                                 w="auto"
