@@ -121,12 +121,11 @@ body {
     padding: 10px;
     width: 90%;
     transition: opacity 1s ease;
-    /* border: 1px solid red; */
-    /* animation: fadeInAnimation ease 0.5s; */
+    opacity: 0;
 }
 
-.content.hidden {
-    opacity: 0;
+.content.fade-in {
+    opacity: 1;
 }
 
 .horizontal-section {
@@ -188,10 +187,10 @@ body {
 
 .fade-in-node {
     opacity: 0;
-    transform: translateY(10px); /* Start off-screen */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Apply transitions */
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
-  
+
 .fade-in-node.fade-in {
     opacity: 1;
     transform: translateY(0); /* Animate upwards */

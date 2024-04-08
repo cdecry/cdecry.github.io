@@ -1,7 +1,18 @@
 import { Text } from "@mantine/core";
+import { useEffect } from "react";
 
 const ProjectsComponent = () => {
 
+    useEffect(() => {
+        const content = document.querySelector('.content');
+        
+        if (content) {
+            setTimeout(() => {
+              content.classList.add('fade-in');
+            }, 50);
+        }
+      }, []);
+      
     return (
         <div className='tab'>
             {/* <div className='header'></div> */}

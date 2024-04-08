@@ -6,12 +6,19 @@ const khergIcon = require('../images/kherg-icon.png');
 const uhnIcon = require('../images/uhn-icon.png');
 
 const ExperienceComponent = () => {
+    
     useEffect(() => {
         const nodes = document.querySelectorAll('.fade-in-node');
+        const content = document.querySelector('.content');
+        if (content) {
+            setTimeout(() => {
+              content.classList.add('fade-in');
+            }, 50);
+        }
         nodes.forEach((node, index) => {
             setTimeout(() => {
               node.classList.add('fade-in');
-            }, (nodes.length - index) * 100); // Adjust the delay to reverse the animation
+            }, (nodes.length - index) * 100);
         });
     }, []);
 

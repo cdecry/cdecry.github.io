@@ -9,11 +9,18 @@ const cssIcon = require('../images/css-icon.png');
 const AboutComponent = () => {
     useEffect(() => {
         const icons = document.querySelectorAll('.made-with-icon');
-    
+        const content = document.querySelector('.content');
+        
+        if (content) {
+            setTimeout(() => {
+              content.classList.add('fade-in');
+            }, 50);
+        }
+
         icons.forEach((icon, index) => {
           setTimeout(() => {
             icon.classList.add('scale-animation');
-          }, index * 200); // Adjust the delay between each icon animation as needed
+          }, index * 200);
         });
       }, []);
 
