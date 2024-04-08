@@ -2,6 +2,8 @@ import { Image, Card, Text } from '@mantine/core';
 import ButtonComponent from './ButtonComponent';
 import { useState } from 'react';
 import ContentComponent from './ContentComponent';
+import AboutComponent from './AboutComponent';
+import ExperienceComponent from './ExperienceComponent';
 
 type ContainerProps = {
     currentTab: string;
@@ -20,10 +22,8 @@ const Container = () => {
                 <ButtonComponent name="more" currentTab={currentTab} setCurrentTab={setCurrentTab}/>
             </Card.Section>
 
-            {/* <Card.Section className='header'>
-                <Image></Image>
-            </Card.Section> */}
-            <ContentComponent currentTab={currentTab}/>
+            {currentTab === 'about me' && <AboutComponent />}
+            {currentTab === 'experience' && <ExperienceComponent />}
 
         </Card>
         );

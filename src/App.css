@@ -88,6 +88,7 @@ body {
 .tab {
     overflow-y: scroll;
     overflow-x: hidden;
+    height: 100%;
 }
 
 .header {
@@ -107,12 +108,8 @@ body {
     margin-top: 10px;
     margin-left: 5%;
     padding: 10px;
-    height: 300px;
     width: 90%;
-    /* border: 1px solid red; */
-}
-
-.content-active {
+    border: 1px solid red;
     animation: fadeInAnimation ease 0.5s;
 }
 
