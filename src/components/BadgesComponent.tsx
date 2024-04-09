@@ -1,4 +1,4 @@
-import { Space } from '@mantine/core';
+import { Space, Text } from '@mantine/core';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
@@ -32,16 +32,16 @@ const SKILLS = [
     { name: 'TailwindCSS', categories: ['frontend', 'libraries/frameworks'] },
     { name: 'pandas', categories: ['libraries/frameworks', 'backend'] },
     { name: 'NumPy', categories: ['libraries/frameworks', 'backend'] },
-    { name: 'PostgreSQL', categories: ['databases'] },
-    { name: 'MySQL', categories: ['databases'] },
-    { name: 'SQL Server', categories: ['databases'] },
-    { name: 'MongoDB', categories: ['databases'] },
+    { name: 'PostgreSQL', categories: ['databases', 'backend'] },
+    { name: 'MySQL', categories: ['databases', 'backend'] },
+    { name: 'SQL Server', categories: ['databases', 'backend'] },
+    { name: 'MongoDB', categories: ['databases', 'backend'] },
     { name: 'Unity', categories: ['tools/os'] },
     { name: 'Visual Studio', categories: ['tools/os'] },
     { name: 'Visual Studio Code', categories: ['tools/os'] },
     { name: 'Linux', categories: ['tools/os'] },
-    { name: 'SSMS', categories: ['tools/os', 'databases'] },
-    { name: 'Azure Data Studio', categories: ['tools/os', 'databases'] },
+    { name: 'SSMS', categories: ['tools/os', 'databases', 'backend'] },
+    { name: 'Azure Data Studio', categories: ['tools/os', 'databases', 'backend'] },
 ];
 
 const BadgesComponent = () => {
@@ -54,7 +54,9 @@ const BadgesComponent = () => {
             setSelectedCategories(['all']);
             return;
         }
+
         let updated = selectedCategories.filter(item => item !== 'all');
+
         if (selectedCategories.includes(selected) && selectedCategories.length == 1)
             setSelectedCategories(['all']);
         else if (selectedCategories.includes(selected))
@@ -90,10 +92,15 @@ const BadgesComponent = () => {
 
   return (
     <>
-        {pills}
+        <Text size='sm'>
+            filter skills by one or more categories {filteredSkills.length > 0 ? "😊" : "🤔"}
+        </Text>
+        <div className='pill-button-container'>
+            {pills}
+        </div>
         <Space h='sm'/>
         <div className="badge-container">
-            {filteredSkills.map((skill, index) => (
+            {filteredSkills.length > 0 ? filteredSkills.map((skill, index) => (
                 <motion.div
                     layout="position"
                     animate={{ opacity: 1 }}
@@ -104,7 +111,9 @@ const BadgesComponent = () => {
                     {skill.name}
                 </span>
                 </motion.div>
-            ))}
+            )) : <Text c='dimmed' size='sm'>no results.. looks like it's time to pick up some new tricks! c:
+                </Text>
+            }
         </div>
     </>
   );
