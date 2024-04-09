@@ -226,6 +226,22 @@ body {
   color: #9d174d;
 }
 
+.pill-button {
+    border: none;
+    border-radius: 10px;
+    margin-right: 0.2rem;
+    font-size: 12px;
+}
+
+.pill-button:hover {
+    cursor: pointer;
+}
+
+.pill-button.active {
+    color: #f3f4f6;
+    background-color: #1f2937;
+}
+
 #crystal {
     font-style: normal;
     font-weight: 600;

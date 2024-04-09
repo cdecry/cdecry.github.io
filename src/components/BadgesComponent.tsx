@@ -1,5 +1,5 @@
-import { InputBase, Pill, Space } from '@mantine/core';
-import React, { useState } from 'react';
+import { Space } from '@mantine/core';
+import { useState } from 'react';
 
 type Skill = {
     name: string;
@@ -35,22 +35,28 @@ const BadgesComponent = () => {
         { name: 'NumPy', categories: ['libraries/frameworks'] },
         { name: 'PostgreSQL', categories: ['databases'] },
         { name: 'MySQL', categories: ['databases'] },
+        { name: 'SQL Server', categories: ['databases'] },
         { name: 'MongoDB', categories: ['databases'] },
         { name: 'Unity', categories: ['tools/os'] },
         { name: 'Visual Studio', categories: ['tools/os'] },
         { name: 'Visual Studio Code', categories: ['tools/os'] },
         { name: 'Linux', categories: ['tools/os'] },
+        { name: 'SSMS', categories: ['tools/os'] },
+        { name: 'Azure Data Studio', categories: ['tools/os'] },
     ];
     
-    const handleCategorySelect = (selected: string[]) => {
-        setSelectedCategories(selected);
+    const toggleSelect = (selected: string) => {
+        if (selectedCategories.includes(selected))
+            setSelectedCategories(selectedCategories.filter(item => item !== selected));
+        else
+            setSelectedCategories([...selectedCategories, selected]);
     };
 
     const getBadgeColor = (categories: string[]) => {
         if (categories.includes('languages')) return 'blue';
         if (categories.includes('libraries/frameworks')) return 'red';
         if (categories.includes('databases')) return 'green';
-        if (categories.includes('tools/os')) return 'yellow';
+        if (categories.includes('tools/os')) return 'indigo';
         return 'gray';
     };
 
@@ -62,18 +68,21 @@ const BadgesComponent = () => {
 
     const pills = CATEGORIES
         .map((category, index) => (
-            <Pill key={index}>
+            <button
+                key={index}
+                className={`pill-button ${selectedCategories.includes(category) ? 'active' : ''}`}
+                onClick={() => toggleSelect(category)}
+            >
                 {category}
-            </Pill>
+            </button>
         ));
+
+    let selected = [];
 
   return (
     <>
-        
-        {/* <InputBase component="div" multiline> */}
-        <Pill.Group>{pills}</Pill.Group>
+        {pills}
         <Space h='sm'/>
-        {/* </InputBase> */}
       
         {/* <MultiSelect
             label="filter by..."
