@@ -244,7 +244,7 @@ body {
     border-radius: 10px;
     margin-right: 0.2rem;
     font-size: 12px;
-    transition: opacity 1s ease;
+    transition: opacity 0.5s ease;
 }
 
 .pill-button.hidden {

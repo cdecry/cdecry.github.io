@@ -57,7 +57,7 @@ const BadgesComponent = () => {
         pills.forEach((pill, orderIndex) => {
             setTimeout(() => {
                 pill.classList.remove('hidden');
-            }, orderIndex * 100 + 900);
+            }, orderIndex * 100);
         });
     }, []);
 
