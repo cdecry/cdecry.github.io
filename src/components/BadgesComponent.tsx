@@ -46,6 +46,20 @@ const SKILLS = [
 
 const BadgesComponent = () => {
     const [selectedCategories, setSelectedCategories] = useState<string[]>(['all']);
+    
+    useEffect(() => {
+        let pills = document.querySelectorAll('.pill-button');
+
+        pills.forEach((pill, orderIndex) => {
+            pill.classList.add('hidden');
+        });
+
+        pills.forEach((pill, orderIndex) => {
+            setTimeout(() => {
+                pill.classList.remove('hidden');
+            }, orderIndex * 100 + 900);
+        });
+    }, []);
 
     const toggleSelect = (selected: string) => {
         if (selected === 'all' && !selectedCategories.includes('all')) {

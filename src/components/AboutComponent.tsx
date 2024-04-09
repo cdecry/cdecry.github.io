@@ -22,12 +22,12 @@ const AboutComponent = () => {
             setTimeout(() => {
                 const icon = icons[index - 1];
                 icon.classList.add('scale-animation');
-            }, orderIndex * 100); //
+            }, orderIndex * 100 + 200); //
         });
         icons.forEach((icon, index) => {
             icon.classList.remove('scale-animation');
         });
-      }, []);
+    }, []);
 
     return (
         <div className='tab'>

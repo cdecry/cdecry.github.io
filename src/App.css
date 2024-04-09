@@ -239,10 +239,16 @@ body {
 }
 
 .pill-button {
+    opacity: 1;
     border: none;
     border-radius: 10px;
     margin-right: 0.2rem;
     font-size: 12px;
+    transition: opacity 1s ease;
+}
+
+.pill-button.hidden {
+    opacity: 0;
 }
 
 .pill-button:hover {
