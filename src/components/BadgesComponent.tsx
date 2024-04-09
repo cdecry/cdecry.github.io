@@ -1,6 +1,6 @@
 import { Space, Text } from '@mantine/core';
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { animate, motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 type Skill = {
     name: string;
@@ -9,12 +9,12 @@ type Skill = {
 
 const CATEGORIES = [
     'all',
-    'languages',
     'frontend',
     'backend',
+    'languages',
     'libraries/frameworks',
-    'databases',
     'tools/os',
+    'databases',
 ]
 
 const SKILLS = [
@@ -46,7 +46,7 @@ const SKILLS = [
 
 const BadgesComponent = () => {
     const [selectedCategories, setSelectedCategories] = useState<string[]>(['all']);
-    
+
     const toggleSelect = (selected: string) => {
         if (selected === 'all' && !selectedCategories.includes('all')) {
             selectedCategories.every((category: string) => 
@@ -54,8 +54,18 @@ const BadgesComponent = () => {
             setSelectedCategories(['all']);
             return;
         }
-
         let updated = selectedCategories.filter(item => item !== 'all');
+        
+        if (selected === 'frontend')
+            updated = updated.filter(item => item !== 'backend');
+        else if (selected === 'backend')
+            updated = updated.filter(item => item !== 'frontend');
+        else if (selected === 'languages')
+            updated = updated.filter(item => item !== 'libraries/frameworks' && item !== 'tools/os');
+        else if (selected === 'libraries/frameworks')
+            updated = updated.filter(item => item !== 'languages' && item !== 'tools/os');
+        else if (selected === 'tools/os')
+            updated = updated.filter(item => item !== 'libraries/frameworks' && item !== 'languages');
 
         if (selectedCategories.includes(selected) && selectedCategories.length == 1)
             setSelectedCategories(['all']);
@@ -103,9 +113,16 @@ const BadgesComponent = () => {
             {filteredSkills.length > 0 ? filteredSkills.map((skill, index) => (
                 <motion.div
                     layout="position"
-                    animate={{ opacity: 1 }}
-                    initial={{ opacity: 0 }}
+                    whileHover="hover"
+                    animate="visible"
+                    transition={{ duration: 0.3 }}
+                    initial="hidden"
                     exit={{ opacity: 0 }}
+                    variants={{
+                        hover: { opacity: 1, scale: 1.1 },
+                        visible: { opacity: 1, scale: 1.0 },
+                        hidden: { opacity: 0, scale: 0 },
+                    }}
                 >
                 <span key={index} className={`badge ${getBadgeColor(skill.categories)}`}>
                     {skill.name}
