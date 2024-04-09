@@ -1,4 +1,5 @@
 import { Space } from '@mantine/core';
+import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 type Skill = {
@@ -84,9 +85,16 @@ const BadgesComponent = () => {
         <Space h='sm'/>
         <div className="badge-container">
             {filteredSkills.map((skill, index) => (
+                <motion.div
+                    layout="position"
+                    animate={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    exit={{ opacity: 0 }}
+                >
                 <span key={index} className={`badge ${getBadgeColor(skill.categories)}`}>
                     {skill.name}
                 </span>
+                </motion.div>
             ))}
         </div>
     </>

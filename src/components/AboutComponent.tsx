@@ -115,7 +115,7 @@ const AboutComponent = () => {
                         <Text size="xl" fw={800}>
                             &#9135; skills / technologies
                         </Text>
-                        <Space h='md' />
+                        <Space h='xs' />
                         <BadgesComponent />
                     </div>
 

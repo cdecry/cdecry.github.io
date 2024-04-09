@@ -184,6 +184,7 @@ body {
     padding-top: 0.125rem;
     padding-bottom: 0.125rem;
     border-radius: 0.25rem;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .badge.blue {
@@ -261,5 +262,5 @@ body {
 
 .fade-in-node.fade-in {
     opacity: 1;
-    transform: translateY(0); /* Animate upwards */
+    transform: translateY(0);
 }
