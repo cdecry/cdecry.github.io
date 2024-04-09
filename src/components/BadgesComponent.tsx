@@ -10,28 +10,28 @@ type Skill = {
 const CATEGORIES = [
     'all',
     'languages',
+    'frontend',
+    'backend',
     'libraries/frameworks',
     'databases',
-    'tools/operating systems',
-    'frontend',
-    'backend'
+    'tools/os',
 ]
 
 const SKILLS = [
-    { name: 'C#', categories: ['languages'] },
-    { name: 'Java', categories: ['languages'] },
+    { name: 'C#', categories: ['languages', 'backend'] },
+    { name: 'Java', categories: ['languages', 'backend'] },
     { name: 'Python', categories: ['languages', 'backend'] },
     { name: 'JavaScript', categories: ['languages', 'frontend'] },
     { name: 'TypeScript', categories: ['languages', 'frontend'] },
     { name: 'HTML', categories: ['languages', 'frontend'] },
     { name: 'CSS', categories: ['languages', 'frontend'] },
-    { name: 'C++', categories: ['languages'] },
-    { name: 'C', categories: ['languages'] },
+    { name: 'C++', categories: ['languages', 'backend'] },
+    { name: 'C', categories: ['languages', 'backend'] },
     { name: 'React.js', categories: ['frontend', 'libraries/frameworks'] },
-    { name: 'Node.js', categories: ['libraries/frameworks'] },
+    { name: 'Node.js', categories: ['libraries/frameworks', 'backend'] },
     { name: 'TailwindCSS', categories: ['frontend', 'libraries/frameworks'] },
-    { name: 'pandas', categories: ['libraries/frameworks'] },
-    { name: 'NumPy', categories: ['libraries/frameworks'] },
+    { name: 'pandas', categories: ['libraries/frameworks', 'backend'] },
+    { name: 'NumPy', categories: ['libraries/frameworks', 'backend'] },
     { name: 'PostgreSQL', categories: ['databases'] },
     { name: 'MySQL', categories: ['databases'] },
     { name: 'SQL Server', categories: ['databases'] },
@@ -40,25 +40,34 @@ const SKILLS = [
     { name: 'Visual Studio', categories: ['tools/os'] },
     { name: 'Visual Studio Code', categories: ['tools/os'] },
     { name: 'Linux', categories: ['tools/os'] },
-    { name: 'SSMS', categories: ['tools/os'] },
-    { name: 'Azure Data Studio', categories: ['tools/os'] },
+    { name: 'SSMS', categories: ['tools/os', 'databases'] },
+    { name: 'Azure Data Studio', categories: ['tools/os', 'databases'] },
 ];
 
 const BadgesComponent = () => {
-    const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+    const [selectedCategories, setSelectedCategories] = useState<string[]>(['all']);
     
     const toggleSelect = (selected: string) => {
-        if (selectedCategories.includes(selected))
-            setSelectedCategories(selectedCategories.filter(item => item !== selected));
+        if (selected === 'all' && !selectedCategories.includes('all')) {
+            selectedCategories.every((category: string) => 
+                toggleSelect(category));
+            setSelectedCategories(['all']);
+            return;
+        }
+        let updated = selectedCategories.filter(item => item !== 'all');
+        if (selectedCategories.includes(selected) && selectedCategories.length == 1)
+            setSelectedCategories(['all']);
+        else if (selectedCategories.includes(selected))
+            setSelectedCategories(updated.filter(item => item !== selected));
         else
-            setSelectedCategories([...selectedCategories, selected]);
+            setSelectedCategories([...updated, selected]);
     };
 
     const getBadgeColor = (categories: string[]) => {
         if (categories.includes('languages')) return 'blue';
         if (categories.includes('libraries/frameworks')) return 'red';
-        if (categories.includes('databases')) return 'green';
         if (categories.includes('tools/os')) return 'indigo';
+        if (categories.includes('databases')) return 'green';
         return 'gray';
     };
 
