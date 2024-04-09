@@ -91,7 +91,7 @@ const BadgesComponent = () => {
         ));
 
   return (
-    <>
+    <div className='badge-component'>
         <Text size='sm'>
             filter skills by one or more categories {filteredSkills.length > 0 ? "😊" : "🤔"}
         </Text>
@@ -115,7 +115,7 @@ const BadgesComponent = () => {
                 </Text>
             }
         </div>
-    </>
+    </div>
   );
 }
 

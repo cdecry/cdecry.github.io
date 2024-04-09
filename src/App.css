@@ -168,11 +168,18 @@ body {
     }
   }
 
+.badge-component {
+    height: 250px;
+}
+
 .badge-container {
+    transition: 1s linear;
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
+    /* width: 400px; */
     row-gap: 0.4rem;
+    padding: 0.2rem;
+    box-shadow: rgba(65, 65, 65, 0.1) -4px 9px 25px -6px;
 }
 
 .badge {
