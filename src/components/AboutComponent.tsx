@@ -17,10 +17,11 @@ const AboutComponent = () => {
             }, 50);
         }
 
-        icons.forEach((icon, index) => {
-          setTimeout(() => {
-            icon.classList.add('scale-animation');
-          }, index * 200);
+        [1, 2, 4, 3].forEach((index, orderIndex) => {
+            setTimeout(() => {
+                const icon = icons[index - 1];
+                icon.classList.add('scale-animation');
+            }, orderIndex * 100); //
         });
         icons.forEach((icon, index) => {
             icon.classList.remove('scale-animation');

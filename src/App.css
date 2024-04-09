@@ -143,7 +143,8 @@ body {
 }
 
 .made-with-icon {
-    transition: transform 0.5s ease;
+    opacity: 0;
+    transition: opacity 1s ease, transform 0.5s ease;
 }
 
 .made-with-icon:hover {
@@ -151,6 +152,7 @@ body {
 }
 
 .scale-animation {
+    opacity: 1;
     animation: scaleUpDown 1s forwards;
 }
 
