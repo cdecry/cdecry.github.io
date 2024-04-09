@@ -1,3 +1,4 @@
+import { InputBase, Pill, Space } from '@mantine/core';
 import React, { useState } from 'react';
 
 type Skill = {
@@ -5,14 +6,24 @@ type Skill = {
     categories: string[];
 }
 
+const CATEGORIES = [
+    'all',
+    'languages',
+    'libraries/frameworks',
+    'databases',
+    'tools/operating systems',
+    'frontend',
+    'backend'
+]
+
 const BadgesComponent = () => {
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
     const skills = [
-        { name: 'C#', categories: ['ProgrammingLanguages'] },
-        { name: 'Java', categories: ['ProgrammingLanguages'] },
-        { name: 'Python', categories: ['ProgrammingLanguages', 'Backend'] },
-        { name: 'JavaScript', categories: ['ProgrammingLanguages', 'Frontend'] },
-        { name: 'React.js', categories: ['Frontend', 'LibrariesFrameworks'] },
+        { name: 'C#', categories: ['languages'] },
+        { name: 'Java', categories: ['languages'] },
+        { name: 'Python', categories: ['languages', 'backend'] },
+        { name: 'JavaScript', categories: ['languages', 'frontend'] },
+        { name: 'React.js', categories: ['frontend', 'libraries/frameworks'] },
     ];
     
     const handleCategorySelect = (selected: string[]) => {
@@ -20,19 +31,41 @@ const BadgesComponent = () => {
     };
 
     const getBadgeColor = (categories: string[]) => {
-        if (categories.includes('ProgrammingLanguages')) return 'blue';
-        if (categories.includes('LibrariesFrameworks')) return 'green';
-        if (categories.includes('Databases')) return 'yellow';
-        if (categories.includes('ToolsOS')) return 'purple';
+        if (categories.includes('languages')) return 'blue';
+        if (categories.includes('libraries/frameworks')) return 'green';
+        if (categories.includes('databases')) return 'yellow';
+        if (categories.includes('tools/operating systems')) return 'purple';
         return 'gray';
     };
 
-    const filteredSkills = skills.filter((skill: Skill) =>
-        selectedCategories.every((category: string) => skill.categories.includes(category))
-    );
+    const filteredSkills = skills.filter((skill: Skill) => {
+        if (selectedCategories.includes('all')) return skills
+        return selectedCategories.every((category: string) => 
+            skill.categories.includes(category));
+    });
+
+    const pills = CATEGORIES
+        .map((category, index) => (
+            <Pill key={index}>
+                {category}
+            </Pill>
+        ));
 
   return (
     <>
+        
+        {/* <InputBase component="div" multiline> */}
+        <Pill.Group>{pills}</Pill.Group>
+        <Space h='sm'/>
+        {/* </InputBase> */}
+      
+        {/* <MultiSelect
+            label="filter by..."
+            placeholder="Pick value"
+            data={CATEGORIES}
+            // value={selectedCategories}
+            onChange={handleCategorySelect}
+        /> */}
         <div className="badge-container">
             {/* blue- programming languages */}
             {/* green - libraries and frameworks */}
@@ -44,6 +77,7 @@ const BadgesComponent = () => {
                     {skill.name}
                 </span>
             ))}
+            
             {/* <span className='badge blue'>C#</span>
             <span className='badge blue'>Java</span>
             <span className='badge blue'>Python</span>
