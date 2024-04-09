@@ -23,7 +23,23 @@ const BadgesComponent = () => {
         { name: 'Java', categories: ['languages'] },
         { name: 'Python', categories: ['languages', 'backend'] },
         { name: 'JavaScript', categories: ['languages', 'frontend'] },
+        { name: 'TypeScript', categories: ['languages', 'frontend'] },
+        { name: 'HTML', categories: ['languages', 'frontend'] },
+        { name: 'CSS', categories: ['languages', 'frontend'] },
+        { name: 'C++', categories: ['languages'] },
+        { name: 'C', categories: ['languages'] },
         { name: 'React.js', categories: ['frontend', 'libraries/frameworks'] },
+        { name: 'Node.js', categories: ['libraries/frameworks'] },
+        { name: 'TailwindCSS', categories: ['frontend', 'libraries/frameworks'] },
+        { name: 'pandas', categories: ['libraries/frameworks'] },
+        { name: 'NumPy', categories: ['libraries/frameworks'] },
+        { name: 'PostgreSQL', categories: ['databases'] },
+        { name: 'MySQL', categories: ['databases'] },
+        { name: 'MongoDB', categories: ['databases'] },
+        { name: 'Unity', categories: ['tools/os'] },
+        { name: 'Visual Studio', categories: ['tools/os'] },
+        { name: 'Visual Studio Code', categories: ['tools/os'] },
+        { name: 'Linux', categories: ['tools/os'] },
     ];
     
     const handleCategorySelect = (selected: string[]) => {
@@ -32,9 +48,9 @@ const BadgesComponent = () => {
 
     const getBadgeColor = (categories: string[]) => {
         if (categories.includes('languages')) return 'blue';
-        if (categories.includes('libraries/frameworks')) return 'green';
-        if (categories.includes('databases')) return 'yellow';
-        if (categories.includes('tools/operating systems')) return 'purple';
+        if (categories.includes('libraries/frameworks')) return 'red';
+        if (categories.includes('databases')) return 'green';
+        if (categories.includes('tools/os')) return 'yellow';
         return 'gray';
     };
 
@@ -78,21 +94,7 @@ const BadgesComponent = () => {
                 </span>
             ))}
             
-            {/* <span className='badge blue'>C#</span>
-            <span className='badge blue'>Java</span>
-            <span className='badge blue'>Python</span>
-            <span className='badge blue'>JavaScript</span>
-            <span className='badge blue'>TypeScript</span>
-            <span className='badge blue'>HTML</span>
-            <span className='badge blue'>CSS</span>
-            <span className='badge blue'>C++</span>
-            <span className='badge blue'>C</span>
-
-            <span className='badge green'>React.js</span>
-            <span className='badge green'>Node.js</span>
-            <span className='badge green'>TailwindCSS</span>
-            <span className='badge green'>pandas</span>
-            <span className='badge green'>NumPy</span>
+            {/*
 
             <span className='badge yellow'>PostgreSQL</span>
             <span className='badge yellow'>MySQL</span>
