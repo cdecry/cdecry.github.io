@@ -10,6 +10,7 @@ const App = () => {
     <div className="App">
         <Profile />
         <Container/>
+        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     </div>
   );
 }

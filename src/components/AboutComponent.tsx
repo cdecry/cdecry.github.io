@@ -1,5 +1,6 @@
-import {Card, SimpleGrid, Text, Image, Space } from "@mantine/core";
+import {Card, SimpleGrid, Text, Image, Space, Tooltip } from "@mantine/core";
 import { useEffect } from "react";
+import BadgesComponent from "./BadgesComponent";
 const reactIcon = require('../images/react-icon.png');
 const jsIcon = require('../images/js-icon.png');
 const htmlIcon = require('../images/html-icon.png');
@@ -53,44 +54,71 @@ const AboutComponent = () => {
                         <Text size='xs' c='dimmed'>this website is made with:</Text>
                         <Space h='xs'/>
                         <SimpleGrid cols={2} verticalSpacing="xs" spacing="xs">
-                            <Image
-                                className='made-with-icon'
-                                radius="md"
-                                h={80}
-                                w="auto"
-                                fit="contain"
-                                src={reactIcon}
-                                tabIndex={0}
-                            />
-                            <Image
-                                className='made-with-icon'
-                                radius="md"
-                                h={80}
-                                w="auto"
-                                fit="contain"
-                                src={jsIcon}
-                                tabIndex={0}
-                            />
-                            <Image
-                                className='made-with-icon'
-                                radius="md"
-                                h={80}
-                                w="auto"
-                                fit="contain"
-                                src={htmlIcon}
-                                tabIndex={0}
-                            />
-                            <Image
-                                className='made-with-icon'
-                                radius="md"
-                                h={80}
-                                w="auto"
-                                fit="contain"
-                                src={cssIcon}
-                                tabIndex={0}
-                            />
+                            <Tooltip
+                                label='React.js'
+                            >
+                                <Image
+                                    className='made-with-icon'
+                                    radius="md"
+                                    h={80}
+                                    w="auto"
+                                    fit="contain"
+                                    src={reactIcon}
+                                    tabIndex={0}
+                                />
+                            </Tooltip>
+                            <Tooltip
+                                label='JavaScript'
+                            >
+                                <Image
+                                    className='made-with-icon'
+                                    radius="md"
+                                    h={80}
+                                    w="auto"
+                                    fit="contain"
+                                    src={jsIcon}
+                                    tabIndex={0}
+                                />
+                            </Tooltip>
+                            <Tooltip
+                                label='HTML5'
+                            >
+                                <Image
+                                    className='made-with-icon'
+                                    radius="md"
+                                    h={80}
+                                    w="auto"
+                                    fit="contain"
+                                    src={htmlIcon}
+                                    tabIndex={0}
+                                />
+                            </Tooltip>
+                            <Tooltip
+                                label='CSS3'
+                            >
+                                <Image
+                                    className='made-with-icon'
+                                    radius="md"
+                                    h={80}
+                                    w="auto"
+                                    fit="contain"
+                                    src={cssIcon}
+                                    tabIndex={0}
+                                />
+                            </Tooltip>
                         </SimpleGrid>
                     </Card>
+                </div>
+                <Space h='md'/>
+                <div className='horizontal-section'>
+                    <div>
+                        <Text size="xl" fw={800}>
+                            &#9135; skills / technologies
+                        </Text>
+                        <Space h='md' />
+                        <BadgesComponent />
+                    </div>
+
                 </div>
             </div>
         </div>
