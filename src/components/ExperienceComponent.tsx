@@ -4,6 +4,7 @@ const hubspotIcon = require('../images/hubspot-icon.png');
 const dayforceIcon = require('../images/dayforce-icon.png');
 const khergIcon = require('../images/kherg-icon.png');
 const uhnIcon = require('../images/uhn-icon.png');
+const mmhsIcon = require('../images/mmhs-icon.png');
 
 const ExperienceComponent = () => {
     
@@ -27,7 +28,7 @@ const ExperienceComponent = () => {
             {/* <div className='header'></div> */}
             <div className='content'>
                 <Text size="xl" fw={800}>
-                    &#9135; work experience
+                    &#9135; experience
                 </Text>
                 <Space h="lg" />
                 
@@ -50,7 +51,7 @@ const ExperienceComponent = () => {
                             <Avatar className="company-icon" src={dayforceIcon} />
                         }
                     >
-                        <Text c="dimmed" size="sm">Software Engineer Intern</Text>
+                        <Text size="sm">Software Engineer Intern</Text>
                         <Text size="xs" mt={4}>January 2024 - August 2024</Text>
                     </Timeline.Item>
 
@@ -61,7 +62,7 @@ const ExperienceComponent = () => {
                             <Avatar className="company-icon" src={khergIcon} />
                         }
                     >
-                        <Text c="dimmed" size="sm">Software Engineer</Text>
+                        <Text size="sm">Software Engineer</Text>
                         <Text size="xs" mt={4}>September 2023 - August 2024</Text>
                     </Timeline.Item>
 
@@ -72,8 +73,19 @@ const ExperienceComponent = () => {
                             <Avatar className="company-icon" src={uhnIcon} />
                         }
                     >
-                        <Text c="dimmed" size="sm">Software Engineer Intern</Text>
+                        <Text size="sm">Software Engineer Intern</Text>
                         <Text size="xs" mt={4}>May 2023 - August 2023</Text>
+                    </Timeline.Item>
+
+                    <Timeline.Item 
+                        className="fade-in-node"
+                        title="Milliken Mills High School"
+                        bullet={
+                            <Avatar className="company-icon" src={mmhsIcon} />
+                        }
+                    >
+                        <Text size="sm">Computer Lab Assistant</Text>
+                        <Text size="xs" mt={4}>January 2018 - March 2020</Text>
                     </Timeline.Item>
                     </Timeline>
             </div>
