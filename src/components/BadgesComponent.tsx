@@ -44,6 +44,8 @@ const SKILLS = [
     { name: 'Azure Data Studio', categories: ['tools/os', 'databases', 'backend'] },
 ];
 
+let buttonClickSound = new Audio("sound/button-click.mp3")
+
 const BadgesComponent = () => {
     const [selectedCategories, setSelectedCategories] = useState<string[]>(['all']);
     
@@ -108,7 +110,7 @@ const BadgesComponent = () => {
             <button
                 key={index}
                 className={`pill-button ${selectedCategories.includes(category) ? 'active' : ''}`}
-                onClick={() => toggleSelect(category)}
+                onClick={() => {buttonClickSound.play(); toggleSelect(category);}}
             >
                 {category}
             </button>
