@@ -28,7 +28,7 @@ const ExperienceComponent = () => {
             {/* <div className='header'></div> */}
             <div className='content'>
                 <Text size="xl" fw={800}>
-                    &#9135; experience
+                    &#9135; work experience
                 </Text>
                 <Space h="lg" />
                 
@@ -52,7 +52,18 @@ const ExperienceComponent = () => {
                         }
                     >
                         <Text size="sm">Software Engineer Intern</Text>
-                        <Text size="xs" mt={4}>January 2024 - August 2024</Text>
+                        <Text size="xs" mt={4}>May 2024 - August 2024</Text>
+                    </Timeline.Item>
+
+                    <Timeline.Item 
+                        className="fade-in-node"
+                        title="Dayforce"
+                        bullet={
+                            <Avatar className="company-icon" src={dayforceIcon} />
+                        }
+                    >
+                        <Text size="sm">Software Engineer Intern</Text>
+                        <Text size="xs" mt={4}>January 2024 - April 2024</Text>
                     </Timeline.Item>
 
                     <Timeline.Item 
@@ -77,7 +88,7 @@ const ExperienceComponent = () => {
                         <Text size="xs" mt={4}>May 2023 - August 2023</Text>
                     </Timeline.Item>
 
-                    <Timeline.Item 
+                    {/* <Timeline.Item 
                         className="fade-in-node"
                         title="Milliken Mills High School"
                         bullet={
@@ -86,7 +97,7 @@ const ExperienceComponent = () => {
                     >
                         <Text size="sm">Computer Lab Assistant</Text>
                         <Text size="xs" mt={4}>January 2018 - March 2020</Text>
-                    </Timeline.Item>
+                    </Timeline.Item> */}
                     </Timeline>
             </div>
         </div>
