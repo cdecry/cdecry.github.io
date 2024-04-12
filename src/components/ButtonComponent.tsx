@@ -1,5 +1,6 @@
 import { Button } from "@mantine/core";
-import { useState } from "react";
+
+let buttonClickSound = new Audio("sound/button-click.mp3")
 
 type ButtonComponentProps = {
     name: string;
@@ -8,7 +9,9 @@ type ButtonComponentProps = {
 }
 
 const ButtonComponent = (props: ButtonComponentProps) => {
+
     const handleClick = () => {
+        buttonClickSound.play();
         props.setCurrentTab(props.name);
     };
 
