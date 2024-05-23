@@ -29,6 +29,15 @@ body {
     margin-left: 20px;
     background-color: #fefefe;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* padding-bottom: 0px; */
+    overflow: hidden;
+}
+
+.container-body {
+    /* border: 1px solid red; */
+    padding-top: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .navigation {
@@ -94,6 +103,12 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.tab:-webkit-scrollbar {
+    display: none;
 }
 
 .header {
@@ -117,8 +132,8 @@ body {
 }
 
 .content {
+    /* border: 1px solid red; */
     margin-left: 5%;
-    padding: 10px;
     width: 90%;
     transition: opacity 0.5s ease;
     opacity: 0;
@@ -285,4 +300,14 @@ body {
 .fade-in-node.fade-in {
     opacity: 1;
     transform: translateY(0);
+}
+
+.projects-grid {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
 }

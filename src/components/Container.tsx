@@ -26,9 +26,11 @@ const Container = () => {
             <div className='header'>
                 <Text ta='left' className='header-text'>{currentTab}</Text>
             </div>
-            {currentTab === 'about me' && <AboutComponent />}
-            {currentTab === 'experience' && <ExperienceComponent />}
-            {currentTab === 'projects' && <ProjectsComponent />}
+            <div className='container-body'>
+                {currentTab === 'about me' && <AboutComponent />}
+                {currentTab === 'experience' && <ExperienceComponent />}
+                {currentTab === 'projects' && <ProjectsComponent />}
+            </div>
 
         </Card>
         );

@@ -4,7 +4,7 @@ const hubspotIcon = require('../images/hubspot-icon.png');
 const dayforceIcon = require('../images/dayforce-icon.png');
 const khergIcon = require('../images/kherg-icon.png');
 const uhnIcon = require('../images/uhn-icon.png');
-const uoftIcon = require('../images/uoft-icon.png');
+const uoftIcon = require('../images/uoft-icon-bg.png');
 const mmhsIcon = require('../images/mmhs-icon.png');
 
 const ExperienceComponent = () => {
@@ -33,8 +33,8 @@ const ExperienceComponent = () => {
                 </Text>
                 <Space h="lg" />
                 
-                <Timeline color="#a98cedff" reverseActive active={2} bulletSize={24} lineWidth={6}>
-                    <Timeline.Item
+                <Timeline color="#a98cedff" reverseActive active={3} bulletSize={24} lineWidth={6}>
+                    {/* <Timeline.Item
                         className="fade-in-node"
                         title="Software Engineer Intern"
                         bullet={
@@ -43,7 +43,7 @@ const ExperienceComponent = () => {
                     >
                         <Text size="sm">HubSpot</Text>
                         <Text size="xs" mt={4}>September 2024 - December 2024</Text>
-                    </Timeline.Item>
+                    </Timeline.Item> */}
 
                     <Timeline.Item 
                         className="fade-in-node"
@@ -53,7 +53,7 @@ const ExperienceComponent = () => {
                         }
                     >
                         <Text size="sm">Dayforce</Text>
-                        <Text size="xs" mt={4}>May 2024 - August 2024</Text>
+                        <Text size="xs" mt={4}>May 2024 - Present</Text>
                     </Timeline.Item>
 
                     <Timeline.Item 
@@ -64,7 +64,7 @@ const ExperienceComponent = () => {
                         }
                     >
                         <Text size="sm">University of Toronto</Text>
-                        <Text size="xs" mt={4}>May 2024 - August 2024</Text>
+                        <Text size="xs" mt={4}>May 2024 - Present</Text>
                     </Timeline.Item>
 
 
@@ -87,7 +87,7 @@ const ExperienceComponent = () => {
                         }
                     >
                         <Text size="sm">Kidney Health Education and Research Group</Text>
-                        <Text size="xs" mt={4}>September 2023 - August 2024</Text>
+                        <Text size="xs" mt={4}>September 2023 - Present</Text>
                     </Timeline.Item>
 
                     <Timeline.Item 
