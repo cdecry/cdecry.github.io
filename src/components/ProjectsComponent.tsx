@@ -1,6 +1,7 @@
 import { Text } from "@mantine/core";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import ProjectCardComponent from "./ProjectCardComponent";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 const ProjectsComponent = () => {
 
@@ -23,7 +24,7 @@ const ProjectsComponent = () => {
             name: 'Project 1', 
             description: 'This is the first item',
             bannerUrl: defaultBannerUrl,
-            tags: ["tag 1"]
+            tags: ["tag 1", "tag 2", "tag 2", "tag 2", "tag 2", "tag 2", "tag 2", "tag 2", "tag 2"]
         },
         { 
             id: 1, 
@@ -39,20 +40,65 @@ const ProjectsComponent = () => {
             bannerUrl: defaultBannerUrl,
             tags: ["tag 1"]
         },
+        { 
+            id: 3, 
+            name: 'Project 4', 
+            description: 'This is the fourth item',
+            bannerUrl: defaultBannerUrl,
+            tags: ["tag 1"]
+        },
+        { 
+            id: 4, 
+            name: 'Project 5', 
+            description: 'This is the fifth item',
+            bannerUrl: defaultBannerUrl,
+            tags: ["tag 1"]
+        },
     ];
 
+    const container = {
+        hidden: { opacity: 1, scale: 0 },
+        visible: {
+          opacity: 1,
+          scale: 1,
+          transition: {
+            delayChildren: 0.3,
+            staggerChildren: 0.2
+          }
+        }
+    };
+      
+      const projectMotion = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+          y: 0,
+          opacity: 1
+        }
+    };    
 
     return (
         <div className='tab'>
             {/* <div className='header'></div> */}
             <div className='content'>
-                <div className='projects-grid'>
+                {/* <div className='projects-grid'> */}
                 {/* <Text>
                     here's a portfolio showcasing a few of the projects i've worked 
                     on in the past. it's constantly evolving, so feel free to head 
                     over to my GitHub for even more updates!
                 </Text> */}
+                <motion.div
+                    className="projects-grid"
+                    variants={container}
+                    initial="hidden"
+                    animate="visible"
+                >
                     {projectList.map(item => (
+                        <motion.div
+                            key={item.id} 
+                            className="item" 
+                            variants={projectMotion}
+                            transition={{ duration: 0.5 }}
+                        >
                         <ProjectCardComponent 
                         // key={item.id} 
                         // id={item.id} 
@@ -63,8 +109,10 @@ const ProjectsComponent = () => {
                         bannerUrl={item.bannerUrl}
                         tags={item.tags}
                         />
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
+                {/* </div> */}
             </div>
         </div>
     );

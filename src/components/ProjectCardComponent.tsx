@@ -36,9 +36,11 @@ const ProjectCardComponent = (props: ProjectCardComponentProps) => {
             />
         </Card.Section>
 
-        {props.tags.map(tagName => (
-            <Badge w="fit-content" variant="light">{tagName}</Badge>
-        ))}
+        <div className="project-tags-container">
+            {props.tags.map(tagName => (
+                <Badge w="fit-content" variant="light">{tagName}</Badge>
+            ))}
+        </div>
 
         <Text fw={700} className={classes.title} mt="xs">{props.name}</Text>
 
