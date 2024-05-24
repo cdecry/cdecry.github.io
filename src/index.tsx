@@ -4,16 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createTheme, MantineProvider } from '@mantine/core';
-
-const theme = createTheme({
-});
+import { Resolver } from './themeResolver';
+import '@mantine/core/styles.css'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-        <MantineProvider theme={theme}>
+        <MantineProvider defaultColorScheme='dark' cssVariablesResolver={Resolver}>
             <App />
         </MantineProvider>
   </React.StrictMode>

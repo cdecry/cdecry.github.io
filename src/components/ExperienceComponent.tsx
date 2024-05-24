@@ -32,7 +32,7 @@ const ExperienceComponent = () => {
                     &#9135; work experience
                 </Text>
                 <Space h="lg" />
-                
+                <Space h="sm" />
                 <Timeline color="#a98cedff" reverseActive active={3} bulletSize={24} lineWidth={6} className="exp-timeline">
                     {/* <Timeline.Item
                         className="fade-in-node"

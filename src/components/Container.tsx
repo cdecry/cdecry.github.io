@@ -19,8 +19,8 @@ const Container = () => {
                 <ButtonComponent name="about me" currentTab={currentTab} setCurrentTab={setCurrentTab}/>
                 <ButtonComponent name="experience" currentTab={currentTab} setCurrentTab={setCurrentTab}/>
                 <ButtonComponent name="projects" currentTab={currentTab} setCurrentTab={setCurrentTab}/>
-                <ButtonComponent name="art/design" currentTab={currentTab} setCurrentTab={setCurrentTab}/>
-                <ButtonComponent name="report a bug" currentTab={currentTab} setCurrentTab={setCurrentTab}/>
+                <ButtonComponent name="journal" currentTab={currentTab} setCurrentTab={setCurrentTab}/>
+                <ButtonComponent name="journal" currentTab={currentTab} setCurrentTab={setCurrentTab}/>
             </Card.Section>
 
             <div className='header'>
