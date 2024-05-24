@@ -304,6 +304,7 @@ body {
 
 .projects-grid {
     /* border: 1px solid red; */
+    padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
