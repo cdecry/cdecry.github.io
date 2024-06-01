@@ -4,6 +4,7 @@ import { useState } from 'react';
 import AboutComponent from './AboutComponent';
 import ExperienceComponent from './ExperienceComponent';
 import ProjectsComponent from './ProjectsComponent';
+import ThemeSwitch from './ThemeSwitch';
 
 type ContainerProps = {
     currentTab: string;
@@ -20,7 +21,8 @@ const Container = () => {
                 <ButtonComponent name="experience" currentTab={currentTab} setCurrentTab={setCurrentTab}/>
                 <ButtonComponent name="projects" currentTab={currentTab} setCurrentTab={setCurrentTab}/>
                 <ButtonComponent name="journal" currentTab={currentTab} setCurrentTab={setCurrentTab}/>
-                <ButtonComponent name="journal" currentTab={currentTab} setCurrentTab={setCurrentTab}/>
+                {/* <ButtonComponent name="journal" currentTab={currentTab} setCurrentTab={setCurrentTab}/> */}
+                <ThemeSwitch />
             </Card.Section>
 
             <div className='header'>

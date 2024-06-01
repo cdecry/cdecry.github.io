@@ -4,11 +4,14 @@ import './App.css';
 
 import Profile from './components/Profile';
 import Container from './components/Container';
+import { Stack, Switch } from '@mantine/core';
 
 const App = () => {
   return (
     <div className="App">
-        <Profile />
+        <Stack>
+            <Profile />
+        </Stack>
         <Container/>
     </div>
   );

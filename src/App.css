@@ -3,6 +3,13 @@
     src: url('fonts/M_PLUS_Rounded_1c_Old/MPLUSRounded1c-Medium.ttf'); /*URL to font*/
 }
 
+* {
+    transition-property: background;
+    transition-duration: 0.2s;
+    /* transition-timing-function: ease-out; */
+    transition-delay: 0;
+  }
+
 body {
     background-color: black;
 }
@@ -96,7 +103,7 @@ body {
     background-color: var(--container-bg);
     border-radius: 30px;
     height: 500px;
-    flex: 1;
+    /* flex: 1; */
     /* border: 1px solid red; */
     min-width: 360px;
     max-width: 360px;
