@@ -22,12 +22,11 @@ body {
     padding-left: 38px;
     padding-right: 38px;
     padding-top: 30px;
-    /* background-image: linear-gradient(86deg, #573aab 0%, #a194b1 100%); */
-    /* background-image: linear-gradient(45deg, var(--bg-gradient-bottom-left) 0%, var(--bg-gradient-top-right) 100%); */
     background-image: url(/src/images/purple-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-color: var(--app-bg); */
+    /* mix-blend-mode: difference; */
+    box-shadow: inset 0 0 0 2000px rgb(234, 128, 252, 0.4);
 }
 
 .container {
@@ -38,7 +37,7 @@ body {
     max-width: calc(76vw - 80px);
     /* min-width: calc(76vw - 80px); */
     margin-left: 20px;
-    background-color: var(--container-bg);
+    background-color: var(--tw-slate-900);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     /* padding-bottom: 0px; */
     overflow: hidden;
@@ -90,7 +89,7 @@ body {
     background-size: calc(var(--d)/sin(var(--angle))) 100%;
     /* animation: slidebg 8s linear infinite reverse; */
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0);
-    /* border: 1px solid #ea80fc; */
+    border: none;
 }
 
 @keyframes slidebg {
@@ -100,7 +99,7 @@ body {
 }
 
 .profile {
-    background-color: var(--container-bg);
+    background-color: var(--tw-slate-900);
     border-radius: 30px;
     height: 500px;
     /* flex: 1; */
@@ -126,7 +125,7 @@ body {
     /* background-image: linear-gradient(86deg, #a98cedff 0%, #d9c5f2ff 100%); */
     /* background-image: linear-gradient(45deg, var(--header-gradient-1) 0%, var(--header-gradient-2) 100%); */
     /* outline: solid 1px #ffffff78; */
-    background-color: var(--header-bg);
+    background-color: var(--tw-slate-800);
     outline-offset: -1px;
     height: 56px;
     /* width: 300px; */
@@ -142,7 +141,7 @@ body {
     font-family: "headerFontBold";
     font-size: 40px;
     font-weight: 500;
-    color: var(--header-text);
+    color: var(--tw-slate-200);
     margin-top: -5px;
 }
 
@@ -150,12 +149,14 @@ body {
     /* border: 1px solid red; */
     margin-left: 5%;
     width: 90%;
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease, transform 1s ease;
     opacity: 0;
+    transform: translateY(-10px);
 }
 
 .content.fade-in {
     opacity: 1;
+    transform: translateY(0px);
 }
 
 .horizontal-section {
@@ -164,7 +165,7 @@ body {
 }
 
 .made-with-container {
-    background-color: var(--gray-2);
+    background-color: var(--tw-slate-800);
     padding-top: 8px;
     width: 220px;
     height: 220px;

@@ -2,8 +2,8 @@ import React from 'react';
 import '@mantine/core/styles.css';
 import './App.css';
 
-import Profile from './components/Profile';
-import Container from './components/Container';
+import Profile from './components/main/Profile';
+import Container from './components/main/Container';
 import { Stack, Switch } from '@mantine/core';
 
 const App = () => {

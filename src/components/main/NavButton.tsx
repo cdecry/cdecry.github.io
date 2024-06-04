@@ -8,8 +8,7 @@ type ButtonComponentProps = {
     setCurrentTab: (t: string) => void;
 }
 
-const ButtonComponent = (props: ButtonComponentProps) => {
-
+const NavButton = (props: ButtonComponentProps) => {
     const handleClick = () => {
         buttonClickSound.play();
         props.setCurrentTab(props.name);
@@ -25,4 +24,4 @@ const ButtonComponent = (props: ButtonComponentProps) => {
     );
 }
 
-export default ButtonComponent;
+export default NavButton;

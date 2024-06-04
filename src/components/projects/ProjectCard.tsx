@@ -11,9 +11,9 @@ import {
     Center
 } from '@mantine/core';
 import { IconHeart, IconBookmark, IconShare } from '@tabler/icons-react';
-import classes from './ProjectCardComponent.module.css';
+import classes from './projectCard.module.css';
 
-type ProjectCardComponentProps = {
+type ProjectCardProps = {
     name: string;
     description: string;
     ghUser: string;
@@ -22,7 +22,7 @@ type ProjectCardComponentProps = {
     tags: string[];
 }
 
-const ProjectCardComponent = (props: ProjectCardComponentProps) => {
+const ProjectCard = (props: ProjectCardProps) => {
 
     const theme = useMantineTheme();
 
@@ -89,4 +89,4 @@ const ProjectCardComponent = (props: ProjectCardComponentProps) => {
   );
 }
 
-export default ProjectCardComponent;
+export default ProjectCard;

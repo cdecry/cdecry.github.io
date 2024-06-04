@@ -1,13 +1,13 @@
 import { Text, Space, Timeline, Avatar } from "@mantine/core";
 import { useEffect } from "react";
-const hubspotIcon = require('../images/hubspot-icon.png');
-const dayforceIcon = require('../images/dayforce-icon.png');
-const khergIcon = require('../images/kherg-icon.png');
-const uhnIcon = require('../images/uhn-icon.png');
-const uoftIcon = require('../images/uoft-icon-bg.png');
-const mmhsIcon = require('../images/mmhs-icon.png');
+const hubspotIcon = require('../../images/hubspot-icon.png');
+const dayforceIcon = require('../../images/dayforce-icon.png');
+const khergIcon = require('../../images/kherg-icon.png');
+const uhnIcon = require('../../images/uhn-icon.png');
+const uoftIcon = require('../../images/uoft-icon-bg.png');
+const mmhsIcon = require('../../images/mmhs-icon.png');
 
-const ExperienceComponent = () => {
+const Experience = () => {
     
     useEffect(() => {
         const nodes = document.querySelectorAll('.fade-in-node');
@@ -33,7 +33,7 @@ const ExperienceComponent = () => {
                 </Text>
                 <Space h="lg" />
                 <Space h="sm" />
-                <Timeline color="#a98cedff" reverseActive active={3} bulletSize={24} lineWidth={6} className="exp-timeline">
+                <Timeline color="#ea80fc" reverseActive active={3} bulletSize={24} lineWidth={6} className="exp-timeline">
                     {/* <Timeline.Item
                         className="fade-in-node"
                         title="Software Engineer Intern"
@@ -117,4 +117,4 @@ const ExperienceComponent = () => {
     );
 }
 
-export default ExperienceComponent;
+export default Experience;

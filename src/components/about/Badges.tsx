@@ -46,7 +46,7 @@ const SKILLS = [
 
 let buttonClickSound = new Audio("sound/button-click.mp3")
 
-const BadgesComponent = () => {
+const Badges = () => {
     const [selectedCategories, setSelectedCategories] = useState<string[]>(['all']);
     
     useEffect(() => {
@@ -152,4 +152,4 @@ const BadgesComponent = () => {
   );
 }
 
-export default BadgesComponent;
+export default Badges;

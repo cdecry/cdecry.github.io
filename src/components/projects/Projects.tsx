@@ -1,9 +1,9 @@
 import { Text } from "@mantine/core";
 import { useEffect, useRef } from "react";
-import ProjectCardComponent from "./ProjectCardComponent";
+import ProjectCard from "./ProjectCard";
 import { motion, useAnimation, useInView } from "framer-motion";
 
-const ProjectsComponent = () => {
+const Projects = () => {
 
     useEffect(() => {
         const content = document.querySelector('.content');
@@ -99,7 +99,7 @@ const ProjectsComponent = () => {
                             variants={projectMotion}
                             transition={{ duration: 0.5 }}
                         >
-                        <ProjectCardComponent 
+                        <ProjectCard
                         // key={item.id} 
                         // id={item.id} 
                         name={item.name} 
@@ -118,4 +118,4 @@ const ProjectsComponent = () => {
     );
 }
 
-export default ProjectsComponent;
+export default Projects;
