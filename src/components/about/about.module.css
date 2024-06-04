@@ -1,0 +1,18 @@
+.madeWithContainer {
+    background-color: var(--tw-slate-800);
+    padding-top: 8px;
+    width: 220px;
+    height: 220px;
+    margin-left: 10px;
+    /* box-shadow: 12px 12px 2px 1px #a194b1; */
+    box-shadow: rgba(169, 140, 237, 0.4) 5px 5px, rgba(169, 140, 237, 0.3) 10px 10px, rgba(169, 140, 237, 0.2) 15px 15px, rgba(169, 140, 237, 0.1) 20px 20px, rgba(169, 140, 237, 0.05) 25px 25px;
+}
+
+.madeWithIcon {
+    opacity: 0;
+    transition: opacity 1s ease, transform 0.5s ease;
+}
+
+.madeWithIcon:hover {
+    transform: scale(1.1);
+}

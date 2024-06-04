@@ -1,5 +1,7 @@
 import { Text, Space, Timeline, Avatar } from "@mantine/core";
 import { useEffect } from "react";
+import classes from './experience.module.css';
+
 const hubspotIcon = require('../../images/hubspot-icon.png');
 const dayforceIcon = require('../../images/dayforce-icon.png');
 const khergIcon = require('../../images/kherg-icon.png');
@@ -10,7 +12,7 @@ const mmhsIcon = require('../../images/mmhs-icon.png');
 const Experience = () => {
     
     useEffect(() => {
-        const nodes = document.querySelectorAll('.fade-in-node');
+        const nodes = document.querySelectorAll('.fadeInNode');
         const content = document.querySelector('.content');
         if (content) {
             setTimeout(() => {
@@ -35,10 +37,10 @@ const Experience = () => {
                 <Space h="sm" />
                 <Timeline color="#ea80fc" reverseActive active={3} bulletSize={24} lineWidth={6} className="exp-timeline">
                     {/* <Timeline.Item
-                        className="fade-in-node"
+                        className={classes.fadeInNode}
                         title="Software Engineer Intern"
                         bullet={
-                            <Avatar className="company-icon" src={hubspotIcon} />
+                            <Avatar className={classes.companyIcon} src={hubspotIcon} />
                         }
                     >
                         <Text size="sm">HubSpot</Text>
@@ -46,10 +48,10 @@ const Experience = () => {
                     </Timeline.Item> */}
 
                     <Timeline.Item 
-                        className="fade-in-node"
+                        className={classes.fadeInNode}
                         title="Software Engineer Intern"
                         bullet={
-                            <Avatar className="company-icon" src={dayforceIcon} />
+                            <Avatar className={classes.companyIcon} src={dayforceIcon} />
                         }
                     >
                         <Text size="sm">Dayforce</Text>
@@ -57,10 +59,10 @@ const Experience = () => {
                     </Timeline.Item>
 
                     <Timeline.Item 
-                        className="fade-in-node"
+                        className={classes.fadeInNode}
                         title="Machine Learning Researcher"
                         bullet={
-                            <Avatar className="company-icon" src={uoftIcon} />
+                            <Avatar className={classes.companyIcon} src={uoftIcon} />
                         }
                     >
                         <Text size="sm">University of Toronto</Text>
@@ -69,10 +71,10 @@ const Experience = () => {
 
 
                     <Timeline.Item 
-                        className="fade-in-node"
+                        className={classes.fadeInNode}
                         title="Software Engineer Intern"
                         bullet={
-                            <Avatar className="company-icon" src={dayforceIcon} />
+                            <Avatar className={classes.companyIcon} src={dayforceIcon} />
                         }
                     >
                         <Text size="sm">Dayforce</Text>
@@ -80,10 +82,10 @@ const Experience = () => {
                     </Timeline.Item>
 
                     <Timeline.Item 
-                        className="fade-in-node"
+                        className={classes.fadeInNode}
                         title="Software Engineer"
                         bullet={
-                            <Avatar className="company-icon" src={khergIcon} />
+                            <Avatar className={classes.companyIcon} src={khergIcon} />
                         }
                     >
                         <Text size="sm">Kidney Health Education and Research Group</Text>
@@ -91,10 +93,10 @@ const Experience = () => {
                     </Timeline.Item>
 
                     <Timeline.Item 
-                        className="fade-in-node"
+                        className={classes.fadeInNode}
                         title="Software Engineer Intern"
                         bullet={
-                            <Avatar className="company-icon" src={uhnIcon} />
+                            <Avatar className={classes.companyIcon} src={uhnIcon} />
                         }
                     >
                         <Text size="sm">University Health Network</Text>
@@ -102,10 +104,10 @@ const Experience = () => {
                     </Timeline.Item>
 
                     {/* <Timeline.Item 
-                        className="fade-in-node"
+                        className={classes.fadeInNode}
                         title="Milliken Mills High School"
                         bullet={
-                            <Avatar className="company-icon" src={mmhsIcon} />
+                            <Avatar className={classes.companyIcon} src={mmhsIcon} />
                         }
                     >
                         <Text size="sm">Computer Lab Assistant</Text>

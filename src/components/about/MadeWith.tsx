@@ -1,14 +1,14 @@
 import {Card, SimpleGrid, Text, Image, Space, Tooltip } from "@mantine/core";
 import { useEffect } from "react";
+
 const reactIcon = require('../images/react-icon.png');
 const jsIcon = require('../images/js-icon.png');
 const htmlIcon = require('../images/html-icon.png');
 const cssIcon = require('../images/css-icon.png');
 
-
 const MadeWith = () => {
     useEffect(() => {
-        const icons = document.querySelectorAll('.made-with-icon');
+        const icons = document.querySelectorAll('.madeWithIcon');
         const content = document.querySelector('.content');
         
         if (content) {
@@ -37,7 +37,7 @@ const MadeWith = () => {
                     label='React.js'
                 >
                     <Image
-                        className='made-with-icon'
+                        className='madeWithIcon'
                         radius="md"
                         h={80}
                         w="auto"
@@ -50,7 +50,7 @@ const MadeWith = () => {
                     label='JavaScript'
                 >
                     <Image
-                        className='made-with-icon'
+                        className='madeWithIcon'
                         radius="md"
                         h={80}
                         w="auto"
@@ -63,7 +63,7 @@ const MadeWith = () => {
                     label='HTML5'
                 >
                     <Image
-                        className='made-with-icon'
+                        className='madeWithIcon'
                         radius="md"
                         h={80}
                         w="auto"
@@ -76,7 +76,7 @@ const MadeWith = () => {
                     label='CSS3'
                 >
                     <Image
-                        className='made-with-icon'
+                        className='madeWithIcon'
                         radius="md"
                         h={80}
                         w="auto"

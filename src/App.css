@@ -6,7 +6,6 @@
 * {
     transition-property: background;
     transition-duration: 0.2s;
-    /* transition-timing-function: ease-out; */
     transition-delay: 0;
   }
 
@@ -25,13 +24,11 @@ body {
     background-image: url(/src/images/purple-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    /* mix-blend-mode: difference; */
     box-shadow: inset 0 0 0 2000px rgb(234, 128, 252, 0.4);
 }
 
 .container {
     flex: 1;
-    /* border: 1px solid red; */
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     max-width: calc(76vw - 80px);
@@ -39,12 +36,10 @@ body {
     margin-left: 20px;
     background-color: var(--tw-slate-900);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    /* padding-bottom: 0px; */
     overflow: hidden;
 }
 
 .container-body {
-    /* border: 1px solid red; */
     padding-top: 16px;
     overflow-x: hidden;
     overflow-y: auto;
@@ -55,7 +50,6 @@ body {
     justify-content: space-evenly;
     padding-top: 26px;
     padding-bottom: 20px;
-    /* border: 1px solid red; */
 }
 
 .nav-button {
@@ -159,30 +153,6 @@ body {
     transform: translateY(0px);
 }
 
-.horizontal-section {
-    display: grid;
-    grid-auto-flow: column;
-}
-
-.made-with-container {
-    background-color: var(--tw-slate-800);
-    padding-top: 8px;
-    width: 220px;
-    height: 220px;
-    margin-left: 10px;
-    /* box-shadow: 12px 12px 2px 1px #a194b1; */
-    box-shadow: rgba(169, 140, 237, 0.4) 5px 5px, rgba(169, 140, 237, 0.3) 10px 10px, rgba(169, 140, 237, 0.2) 15px 15px, rgba(169, 140, 237, 0.1) 20px 20px, rgba(169, 140, 237, 0.05) 25px 25px;
-}
-
-.made-with-icon {
-    opacity: 0;
-    transition: opacity 1s ease, transform 0.5s ease;
-}
-
-.made-with-icon:hover {
-    transform: scale(1.1);
-}
-
 .scale-animation {
     opacity: 1;
     animation: scaleUpDown 1s forwards;
@@ -200,142 +170,9 @@ body {
     }
   }
 
-.badge-component {
-    height: 250px;
-}
-
-.badge-container {
-    transition: 1s linear;
-    display: flex;
-    flex-wrap: wrap;
-    width: 500px;
-    row-gap: 0.4rem;
-    padding: 0.2rem;
-    border-radius: 3px;
-    box-shadow: rgba(30, 30, 30, 0.1) -4px 9px 25px -6px;
-}
-
-.badge {
-    font-size: 0.875rem;
-    font-weight: 500;
-    margin-right: 0.4rem;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-    padding-top: 0.125rem;
-    padding-bottom: 0.125rem;
-    border-radius: 0.25rem;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.badge.blue {
-    background-color: #dbeafe;
-    color: #1e40af;
-}
-
-.badge.gray {
-  background-color: #f3f4f6;
-  color: #1f2937;
-}
-
-.badge.red {
-  background-color: #fee2e2;
-  color: #991b1b;
-}
-
-.badge.green {
-  background-color: #dcfce7;
-  color: #166534;
-}
-
-.badge.yellow {
-  background-color: #fef9c3;
-  color: #854d0e;
-}
-
-.badge.indigo {
-  background-color: #e0e7ff;
-  color: #3730a3;
-}
-
-.badge.purple {
-  background-color: #f3e8ff;
-  color: #6b21a8;
-}
-
-.badge.pink {
-  background-color: #fce7f3;
-  color: #9d174d;
-}
-.pill-button-container {
-    margin-top: 3px;
-}
-
-.pill-button {
-    opacity: 1;
-    border: none;
-    border-radius: 10px;
-    margin-right: 0.2rem;
-    font-size: 12px;
-    transition: opacity 0.5s ease;
-}
-
-.pill-button.hidden {
-    opacity: 0;
-}
-
-.pill-button:hover {
-    cursor: pointer;
-}
-
-.pill-button.active {
-    color: #f3f4f6;
-    background-color: #1f2937;
-}
 
 #crystal {
     font-style: normal;
     font-weight: 600;
     color: #f093fb;
-}
-
-.company-icon {
-    outline: 3px solid #fefefe;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -3px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    transition: transform 0.2s ease;
-}
-
-.company-icon:hover {
-    transform: scale(1.2);
-}
-
-.fade-in-node {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.fade-in-node.fade-in {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.projects-grid {
-    /* border: 1px solid red; */
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 10px;
-    row-gap: 12px;
-    padding-left: 0px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.project-tags-container {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 0.4rem;
-    column-gap: 0.4rem;
-    width: 100%;
 }

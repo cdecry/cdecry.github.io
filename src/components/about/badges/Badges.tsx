@@ -1,6 +1,7 @@
 import { Space, Text } from '@mantine/core';
 import { animate, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import classes from './badges.module.css';
 
 type Skill = {
     name: string;
@@ -109,7 +110,7 @@ const Badges = () => {
         .map((category, index) => (
             <button
                 key={index}
-                className={`pill-button ${selectedCategories.includes(category) ? 'active' : ''}`}
+                className={`${classes.pillButton} ${selectedCategories.includes(category) ? `active` : ''}`}
                 onClick={() => {buttonClickSound.play(); toggleSelect(category);}}
             >
                 {category}
@@ -117,15 +118,15 @@ const Badges = () => {
         ));
 
   return (
-    <div className='badge-component'>
+    <div className={classes.badgeComponent}>
         <Text size='sm'>
             filter skills by one or more categories {filteredSkills.length > 0 ? "😊" : "🤔"}
         </Text>
-        <div className='pill-button-container'>
+        <div className={classes.pillButtonContainer}>
             {pills}
         </div>
         <Space h='sm'/>
-        <div className="badge-container">
+        <div className={classes.badgeContainer}>
             {filteredSkills.length > 0 ? filteredSkills.map((skill, index) => (
                 <motion.div
                     layout="position"
@@ -140,7 +141,7 @@ const Badges = () => {
                         hidden: { opacity: 0, scale: 0 },
                     }}
                 >
-                <span key={index} className={`badge ${getBadgeColor(skill.categories)}`}>
+                <span key={index} className={`${classes.badge} ${classes[getBadgeColor(skill.categories)]}`}>
                     {skill.name}
                 </span>
                 </motion.div>

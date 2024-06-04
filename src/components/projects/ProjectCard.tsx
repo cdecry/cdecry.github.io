@@ -11,7 +11,7 @@ import {
     Center
 } from '@mantine/core';
 import { IconHeart, IconBookmark, IconShare } from '@tabler/icons-react';
-import classes from './projectCard.module.css';
+import classes from './projects.module.css';
 
 type ProjectCardProps = {
     name: string;
@@ -36,7 +36,7 @@ const ProjectCard = (props: ProjectCardProps) => {
             />
         </Card.Section>
 
-        <div className="project-tags-container">
+        <div className={classes.projectTagsContainer}>
             {props.tags.map(tagName => (
                 <Badge w="fit-content" variant="light">{tagName}</Badge>
             ))}

@@ -1,0 +1,20 @@
+.companyIcon {
+    outline: 3px solid #fefefe;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -3px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: transform 0.2s ease;
+}
+
+.companyIcon:hover {
+    transform: scale(1.2);
+}
+
+.fadeInNode {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fadeInNode.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}

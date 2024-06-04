@@ -1,6 +1,6 @@
 import {Text, Space } from "@mantine/core";
 import { useEffect } from "react";
-import BadgesComponent from "./Badges";
+import BadgesComponent from "./badges/Badges";
 
 const About = () => {
     useEffect(() => {
@@ -15,9 +15,8 @@ const About = () => {
 
     return (
         <div className='tab'>
-            {/* <div className='header'></div> */}
             <div className='content'>
-                <div className='horizontal-section'>
+                <div>
                     <div>
                         <Text size="xl" fw={800}>
                             &#9135; welcome
@@ -38,7 +37,7 @@ const About = () => {
                     </div>
                 </div>
                 <Space h='md'/>
-                <div className='horizontal-section'>
+                <div>
                     <div>
                         <Text size="xl" fw={800}>
                             &#9135; skills / technologies

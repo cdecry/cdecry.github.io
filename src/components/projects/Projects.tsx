@@ -2,6 +2,7 @@ import { Text } from "@mantine/core";
 import { useEffect, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import { motion, useAnimation, useInView } from "framer-motion";
+import classes from './projects.module.css';
 
 const Projects = () => {
 
@@ -87,7 +88,7 @@ const Projects = () => {
                     over to my GitHub for even more updates!
                 </Text> */}
                 <motion.div
-                    className="projects-grid"
+                    className={classes.projectsGrid}
                     variants={container}
                     initial="hidden"
                     animate="visible"
