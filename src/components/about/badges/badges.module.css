@@ -89,3 +89,31 @@
     color: #f3f4f6;
     background-color: #1f2937;
 }
+
+@media (min-width: 0px) {
+    .badgeContainer {
+        width: calc(100%);
+    }
+}
+
+@media (min-width: 640px) {
+    .badgeContainer {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 1280px) {
+    
+}
+
+@media screen and (min-width: 1536px) {
+    
+}

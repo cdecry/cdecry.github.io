@@ -18,9 +18,9 @@ body {
     height: 100vh;
     width: 100vw;
     justify-content: center;
-    padding-left: 38px;
-    padding-right: 38px;
-    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
     background-image: url(/src/images/purple-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,9 +29,9 @@ body {
 
 .container {
     flex: 1;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    max-width: calc(76vw - 80px);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: calc(70em - 60px);
     /* min-width: calc(76vw - 80px); */
     margin-left: 20px;
     background-color: var(--tw-slate-900);
@@ -46,6 +46,8 @@ body {
 }
 
 .navigation {
+    padding-left: 1em;
+    padding-right: 1em;
     display: flex;
     justify-content: space-evenly;
     padding-top: 26px;
@@ -55,7 +57,7 @@ body {
 .nav-button {
     --d:100px;
     --angle:86deg;
-    border-radius: 30px;
+    border-radius: 8px;
     background-color: transparent;
     border: 1px dashed rgba(0, 0, 0, 0.2);
     width: 120px;
@@ -66,11 +68,9 @@ body {
 .nav-button-active {
     --d:100px;
     --angle:86deg;
-    border-radius: 30px;
+    border-radius: 8px;
     background-color: transparent;
     /* border: 1px solid #a98cedff; */
-    width: 120px;
-    height: 40px;
     /* color: black; */
     background: repeating-linear-gradient(var(--angle), #ea80fc, #b44ccb, #ea80fc var(--d));
     background-size: calc(var(--d)/sin(var(--angle))) 100%;
@@ -94,7 +94,7 @@ body {
 
 .profile {
     background-color: var(--tw-slate-900);
-    border-radius: 30px;
+    border-radius: 10px;
     height: 500px;
     /* flex: 1; */
     /* border: 1px solid red; */
@@ -170,9 +170,68 @@ body {
     }
   }
 
-
 #crystal {
     font-style: normal;
     font-weight: 600;
     color: #f093fb;
+}
+
+@media (min-width: 0px) {
+    .container {
+        /* background-color: magenta; */
+        margin-left: 0px;
+    }
+
+    .profile {
+        display: none;
+    }
+
+        
+    .nav-button, .nav-button-active {
+        width: 100px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 640px) {
+    .container {
+        /* background-color: yellow; */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        /* background-color: green; */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        /* background-color: orange; */
+        margin-left: 20px;
+    }
+    
+    .profile {
+        display: block;
+        min-width: 300px;
+        max-width: 300px;
+        height: 380px;
+    }
+
+    .nav-button, .nav-button-active {
+        width: 140px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        /* background-color: blue; */
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .container {
+        /* background-color: red; */
+    }
 }

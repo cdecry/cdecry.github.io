@@ -98,7 +98,7 @@ const Projects = () => {
                             key={item.id} 
                             className="item" 
                             variants={projectMotion}
-                            transition={{ duration: 0.5 }}
+                            transition={{ duration: 0.6 }}
                         >
                         <ProjectCard
                         // key={item.id} 
