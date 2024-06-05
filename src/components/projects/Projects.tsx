@@ -20,6 +20,9 @@ const Projects = () => {
     const tabsBanner = require(`../../assets/projects/tabs-screenshot.png`);
     const planetBanner = require(`../../assets/projects/planet-banner.png`);
     const venueBanner = require(`../../assets/projects/venue-banner.png`);
+    const snakeBanner = require(`../../assets/projects/snake-banner.gif`);
+    const miniwebBanner = require(`../../assets/projects/miniweb-banner.png`);
+    const iportfolioBanner = require(`../../assets/projects/iportfolio-banner.gif`);
 
     const ghUser = "cdecry";
     const ghUserIcon = "https://avatars.githubusercontent.com/u/35664551"
@@ -42,7 +45,7 @@ const Projects = () => {
             Manage inventory, rent, finances, schedule 
             chores and more.`,
             bannerUrl: tabsBanner,
-            tags: ["React Native", "TypeScript", "MongoDB", "mobile"],
+            tags: ["React Native", "TypeScript", "MongoDB", "mobile", "ui/ux"],
             progress: 100,
         },
         { 
@@ -61,14 +64,37 @@ const Projects = () => {
             tags: ["Java", "Firebase","mobile"],
             progress: 100
         },
-        // { 
-        //     name: '🌐 MiniWeb 3DS', 
-        //     description: `Compact web-browser for the Nintendo 3DS that allows you 
-        //     to visit websites that won't load on the native browser!`,
-        //     bannerUrl: defaultBannerUrl,
-        //     tags: ["C++", "Homebrew", "Ongoing"],
-        //     progress: 40
-        // },
+        { 
+            name: '🐍 SnakeAI', 
+            description: `Using a simple Feedforward Neural Network and Deep 
+            Q-Learning to train an AI to play the classic Snake game! :>`,
+            bannerUrl: snakeBanner,
+            tags: ["Python", "PyTorch","PyGame", "Machine Learning"],
+            progress: 100
+        },
+        { 
+            name: '📱 iPortfolio', 
+            description: `An iPad-themed responsive portfolio website made with Angular, HTML, and CSS.`,
+            bannerUrl: iportfolioBanner,
+            tags: ["Angular", "JavaScript","HTML", "CSS", "web development"],
+            progress: 100
+        },
+        { 
+            name: '🌟 Fantage Reboot', 
+            description: `Unofficial HTML5 & JavaScript port of the flash-based 
+            MMORPG Fantage with core features from the original game.`,
+            bannerUrl: defaultBannerUrl,
+            tags: ["HTML5", "JavaScript", "Node.js", "MongoDB", "game development"],
+            progress: 60
+        },
+        { 
+            name: '🌐 MiniWeb 3DS', 
+            description: `Compact web-browser for the Nintendo 3DS that allows you 
+            to visit websites that won't load on the native browser!`,
+            bannerUrl: miniwebBanner,
+            tags: ["C++", "Homebrew"],
+            progress: 40
+        },
     ];
 
     const container = {

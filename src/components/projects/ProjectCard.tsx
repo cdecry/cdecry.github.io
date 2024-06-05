@@ -48,7 +48,7 @@ const ProjectCard = (props: ProjectCardProps) => {
             <Text fw={700} className={classes.title} mt="xs">{props.name}</Text>
             {props.progress < 100 && <Group gap={5} className={classes.progress}>
                 <Text fz="xs" c="dimmed">
-                    {props.progress}% completed
+                    {props.progress}%
                 </Text>
                 <RingProgress size={18} thickness={2} sections={[{ value: props.progress, color: 'blue' }]} />
             </Group>}

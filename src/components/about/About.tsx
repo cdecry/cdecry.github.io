@@ -25,14 +25,13 @@ const About = () => {
                             hi! my name is <em id='crystal'>crystal</em>, and i'm a 
                             fourth-year computer science co-op student @ the University of 
                             Toronto, passionate about software development and its innovative 
-                            (and fun) applications. i'm always learning and exploring new 
-                            technologies!<br></br>
+                            (and fun!) applications. <br></br>
                         </Text>
                         <Space h='sm'/>
                         <Text>
                             the purpose of this website is to allow me to share my projects, 
                             hobbies, and interests, while practicing my web development skills 
-                            by building a responsive, interactive, fun experience.
+                            by building a responsive, interactive, fun experience! 😄
                         </Text>
                     </div>
                 </div>
