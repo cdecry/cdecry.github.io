@@ -17,7 +17,7 @@ const Projects = () => {
     }, []);
     
     const miraiBanner = require(`../../assets/projects/mirai-banner.png`);
-    const tabsBanner = require(`../../assets/projects/tabs-screenshot.png`);
+    const tabsBanner = require(`../../assets/projects/tabs-banner.gif`);
     const planetBanner = require(`../../assets/projects/planet-banner.png`);
     const venueBanner = require(`../../assets/projects/venue-banner.png`);
     const snakeBanner = require(`../../assets/projects/snake-banner.gif`);
