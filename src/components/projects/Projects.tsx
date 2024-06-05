@@ -19,53 +19,56 @@ const Projects = () => {
     const miraiBanner = require(`../../assets/projects/mirai-banner.png`);
     const tabsBanner = require(`../../assets/projects/tabs-screenshot.png`);
     const planetBanner = require(`../../assets/projects/planet-banner.png`);
+    const venueBanner = require(`../../assets/projects/venue-banner.png`);
 
     const ghUser = "cdecry";
     const ghUserIcon = "https://avatars.githubusercontent.com/u/35664551"
     const defaultBannerUrl = "https://github.blog/wp-content/uploads/2020/12/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.png?resize=1200%2C630"
     const projectList = [
         { 
-            id: 0, 
             name: '🔮 Mirai', 
             description: `
-            An MMORPG virtual world built with Unity and C#. Features include login/signup, multiplayer interaction, inventory system, chat system, 
-            room location management, and buddy system.
+            An MMORPG virtual world for making and chatting with 
+            friends, customizing your avatar, and exploring new places.
             `,
             bannerUrl: miraiBanner,
-            tags: ["C#", "MySQL", "Unity", "game development"]
+            tags: ["C#", "MySQL", "Unity", "game development"],
+            progress: 100
         },
         { 
-            id: 1, 
-            name: '📁 Tabs: Household Management', 
+            name: '📁 Tabs', 
             description: `
-            An iOS/Android app for household + roommate management. 
-            Manage inventory, finances, create/schedule 
+            An app for household + roommate management. 
+            Manage inventory, rent, finances, schedule 
             chores and more.`,
             bannerUrl: tabsBanner,
-            tags: ["React Native", "TypeScript", "MongoDB", "full stack"]
+            tags: ["React Native", "TypeScript", "MongoDB", "mobile"],
+            progress: 100,
         },
         { 
-            id: 2, 
             name: '🪐 Planet Bot', 
             description: `A planning & team management chat that allows you to streamline Trello operations in 
             your Discord server!`,
             bannerUrl: planetBanner,
-            tags: ["C#", ".NET", "Entity Framework Core"]
+            tags: ["C#", ".NET", "Entity Framework Core"],
+            progress: 100
         },
         { 
-            id: 3, 
-            name: 'Project 4', 
-            description: 'This is the fourth item',
-            bannerUrl: defaultBannerUrl,
-            tags: ["tag 1"]
+            name: '🏟️ Venue Bookings', 
+            description: `An app that allows users to join and schedule upcoming
+             events at venues, built on Google's Material Design 3.`,
+            bannerUrl: venueBanner,
+            tags: ["Java", "Firebase","mobile"],
+            progress: 100
         },
-        { 
-            id: 4, 
-            name: 'Project 5', 
-            description: 'This is the fifth item',
-            bannerUrl: defaultBannerUrl,
-            tags: ["tag 1"]
-        },
+        // { 
+        //     name: '🌐 MiniWeb 3DS', 
+        //     description: `Compact web-browser for the Nintendo 3DS that allows you 
+        //     to visit websites that won't load on the native browser!`,
+        //     bannerUrl: defaultBannerUrl,
+        //     tags: ["C++", "Homebrew", "Ongoing"],
+        //     progress: 40
+        // },
     ];
 
     const container = {
@@ -104,21 +107,22 @@ const Projects = () => {
                     initial="hidden"
                     animate="visible"
                 >
-                    {projectList.map(item => (
+                    {projectList.map((item, idx) => (
                         <motion.div
-                            key={item.id} 
+                            key={idx} 
                             className="item" 
                             variants={projectMotion}
                             transition={{ duration: 0.6 }}
                         >
                         <ProjectCard
-                            key={item.id} 
+                            key={idx} 
                             name={item.name} 
                             description={item.description}
                             ghUser={ghUser}
                             ghUserIcon={ghUserIcon}
                             bannerUrl={item.bannerUrl}
                             tags={item.tags}
+                            progress={item.progress}
                         />
                         </motion.div>
                     ))}

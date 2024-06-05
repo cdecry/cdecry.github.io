@@ -8,7 +8,8 @@ import {
     Badge,
     useMantineTheme,
     rem,
-    Center
+    Center,
+    RingProgress
 } from '@mantine/core';
 import { IconHeart, IconBookmark, IconShare } from '@tabler/icons-react';
 import classes from './projects.module.css';
@@ -20,6 +21,7 @@ type ProjectCardProps = {
     ghUserIcon: string;
     bannerUrl: string;
     tags: string[];
+    progress: number;
 }
 
 const ProjectCard = (props: ProjectCardProps) => {
@@ -42,8 +44,15 @@ const ProjectCard = (props: ProjectCardProps) => {
             ))}
         </div>
 
-        <Text fw={700} className={classes.title} mt="xs">{props.name}</Text>
-
+        <Group justify="space-between">
+            <Text fw={700} className={classes.title} mt="xs">{props.name}</Text>
+            {props.progress < 100 && <Group gap={5} className={classes.progress}>
+                <Text fz="xs" c="dimmed">
+                    {props.progress}% completed
+                </Text>
+                <RingProgress size={18} thickness={2} sections={[{ value: props.progress, color: 'blue' }]} />
+            </Group>}
+        </Group>
         <Text fz={"sm"} c="dimmed" lineClamp={3}>{props.description}</Text>
 
         <Card.Section className={classes.footer}>

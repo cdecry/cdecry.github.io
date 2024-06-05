@@ -52,6 +52,10 @@
         var(--mantine-font-family);
 }
 
+.progress {
+    margin-top: 10px;
+}
+
 .footer {
     padding: var(--mantine-spacing-xs) var(--mantine-spacing-xs);
     border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
