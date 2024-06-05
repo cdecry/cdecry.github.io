@@ -3,12 +3,12 @@ import { useEffect } from "react";
 import classes from './experience.module.css';
 import { motion } from "framer-motion";
 
-const hubspotIcon = require('../../images/hubspot-icon.png');
-const dayforceIcon = require('../../images/dayforce-icon.png');
-const khergIcon = require('../../images/kherg-icon.png');
-const uhnIcon = require('../../images/uhn-icon.png');
-const uoftIcon = require('../../images/uoft-icon-bg.png');
-const mmhsIcon = require('../../images/mmhs-icon.png');
+const hubspotIcon = require('../../assets/experience/hubspot-icon.png');
+const dayforceIcon = require('../../assets/experience/dayforce-icon.png');
+const khergIcon = require('../../assets/experience/kherg-icon.png');
+const uhnIcon = require('../../assets/experience/uhn-icon.png');
+const uoftIcon = require('../../assets/experience/uoft-icon-bg.png');
+const mmhsIcon = require('../../assets/experience/mmhs-icon.png');
 
 const Experience = () => {
     
@@ -81,7 +81,7 @@ const Experience = () => {
                 </Text>
                 <Space h="lg" />
                 <Space h="sm" />
-                <Timeline color="#ea80fc" reverseActive active={3} bulletSize={24} lineWidth={6} className="exp-timeline">
+                <Timeline color="#ea80fc" reverseActive active={4} bulletSize={24} lineWidth={6} className="exp-timeline">
                     {experienceList.map((item, idx) => (
                         <Timeline.Item 
                             className={classes.fadeInNode}

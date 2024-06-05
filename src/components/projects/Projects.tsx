@@ -16,23 +16,32 @@ const Projects = () => {
         }
     }, []);
     
+    const assetLoc = "../../assets/experience"
+    const miraiBanner = require(`${assetLoc}/mirai-banner.png`);
+
     const ghUser = "cdecry";
     const ghUserIcon = "https://avatars.githubusercontent.com/u/35664551"
     const defaultBannerUrl = "https://github.blog/wp-content/uploads/2020/12/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.png?resize=1200%2C630"
     const projectList = [
         { 
             id: 0, 
-            name: 'Project 1', 
-            description: 'This is the first item',
-            bannerUrl: defaultBannerUrl,
-            tags: ["tag 1", "tag 2", "tag 2", "tag 2", "tag 2", "tag 2", "tag 2", "tag 2", "tag 2"]
+            name: 'Mirai', 
+            description: `
+            An MMORPG virtual world built with Unity and C#. Features include login/signup, multiplayer interaction, inventory system, chat system, 
+            room location management, and buddy system.
+            `,
+            bannerUrl: miraiBanner,
+            tags: ["C#", "MySQL", "Unity", "game development"]
         },
         { 
             id: 1, 
-            name: 'Project 2', 
-            description: 'This is the second item',
+            name: 'Tabs', 
+            description: `
+            Tabs is an iOS/Android app for household and roommate management. 
+            Users are able to manage inventory and finances, create/schedule 
+            chores and more.`,
             bannerUrl: defaultBannerUrl,
-            tags: ["tag 2"]
+            tags: ["React Native", "TypeScript", "MongoDB", "full stack"]
         },
         { 
             id: 2, 
@@ -101,14 +110,13 @@ const Projects = () => {
                             transition={{ duration: 0.6 }}
                         >
                         <ProjectCard
-                        // key={item.id} 
-                        // id={item.id} 
-                        name={item.name} 
-                        description={item.description}
-                        ghUser={ghUser}
-                        ghUserIcon={ghUserIcon}
-                        bannerUrl={item.bannerUrl}
-                        tags={item.tags}
+                            key={item.id} 
+                            name={item.name} 
+                            description={item.description}
+                            ghUser={ghUser}
+                            ghUserIcon={ghUserIcon}
+                            bannerUrl={item.bannerUrl}
+                            tags={item.tags}
                         />
                         </motion.div>
                     ))}

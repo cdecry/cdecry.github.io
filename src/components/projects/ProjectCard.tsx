@@ -32,7 +32,7 @@ const ProjectCard = (props: ProjectCardProps) => {
             <Image
                 src={props.bannerUrl}
                 alt={props.name}
-                height={160}
+                height={120}
             />
         </Card.Section>
 
