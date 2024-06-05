@@ -69,7 +69,7 @@ const Projects = () => {
         }
     };
       
-      const projectMotion = {
+    const projectMotion = {
         hidden: { y: 20, opacity: 0 },
         visible: {
           y: 0,

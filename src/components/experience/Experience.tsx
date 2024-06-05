@@ -1,6 +1,7 @@
 import { Text, Space, Timeline, Avatar } from "@mantine/core";
 import { useEffect } from "react";
 import classes from './experience.module.css';
+import { motion } from "framer-motion";
 
 const hubspotIcon = require('../../images/hubspot-icon.png');
 const dayforceIcon = require('../../images/dayforce-icon.png');
@@ -12,19 +13,64 @@ const mmhsIcon = require('../../images/mmhs-icon.png');
 const Experience = () => {
     
     useEffect(() => {
-        const nodes = document.querySelectorAll('.fadeInNode');
+        // const nodes = document.querySelectorAll('.fadeInNode');
         const content = document.querySelector('.content');
         if (content) {
             setTimeout(() => {
               content.classList.add('fade-in');
             }, 50);
         }
-        nodes.forEach((node, index) => {
-            setTimeout(() => {
-              node.classList.add('fade-in');
-            }, (nodes.length - index) * 100);
-        });
+        // nodes.forEach((node, index) => {
+        //     setTimeout(() => {
+        //       node.classList.add('fade-in');
+        //     }, (nodes.length - index) * 100);
+        // });
     }, []);
+
+    const experienceList = [
+        {
+            title: "Software Engineering Intern",
+            company: "HubSpot",
+            icon: hubspotIcon,
+            date: "September 2024 - December 2024",
+            location: "Cambridge, MA"
+        },
+        {
+            title: "Software Engineering Intern",
+            company: "Dayforce",
+            icon: dayforceIcon,
+            date: "May 2024 - Present",
+            location: "Toronto, ON"
+        },
+        {
+            title: "Machine Learning Research Intern",
+            company: "University of Toronto",
+            icon: uoftIcon,
+            date: "May 2024 - Present",
+            location: "Toronto, ON"
+        },
+        {
+            title: "Software Engineering Intern",
+            company: "Dayforce",
+            icon: dayforceIcon,
+            date: "January 2024 - April 2024",
+            location: "Toronto, ON"
+        },
+        {
+            title: "Software Engineer",
+            company: "Kidney Health Education and Research Group",
+            icon: khergIcon,
+            date: "September 2023 - Present",
+            location: "Toronto, ON"
+        },
+        {
+            title: "Software Engineeing Intern",
+            company: "University Health Network",
+            icon: uhnIcon,
+            date: "May 2023 - August 2024",
+            location: "Toronto, ON"
+        }
+    ]
 
     return (
         <div className='tab'>
@@ -36,83 +82,18 @@ const Experience = () => {
                 <Space h="lg" />
                 <Space h="sm" />
                 <Timeline color="#ea80fc" reverseActive active={3} bulletSize={24} lineWidth={6} className="exp-timeline">
-                    {/* <Timeline.Item
-                        className={classes.fadeInNode}
-                        title="Software Engineer Intern"
-                        bullet={
-                            <Avatar className={classes.companyIcon} src={hubspotIcon} />
-                        }
-                    >
-                        <Text size="sm">HubSpot</Text>
-                        <Text size="xs" mt={4}>September 2024 - December 2024</Text>
-                    </Timeline.Item> */}
-
-                    <Timeline.Item 
-                        className={classes.fadeInNode}
-                        title="Software Engineer Intern"
-                        bullet={
-                            <Avatar className={classes.companyIcon} src={dayforceIcon} />
-                        }
-                    >
-                        <Text size="sm">Dayforce</Text>
-                        <Text size="xs" mt={4}>May 2024 - Present</Text>
-                    </Timeline.Item>
-
-                    <Timeline.Item 
-                        className={classes.fadeInNode}
-                        title="Machine Learning Researcher"
-                        bullet={
-                            <Avatar className={classes.companyIcon} src={uoftIcon} />
-                        }
-                    >
-                        <Text size="sm">University of Toronto</Text>
-                        <Text size="xs" mt={4}>May 2024 - Present</Text>
-                    </Timeline.Item>
-
-
-                    <Timeline.Item 
-                        className={classes.fadeInNode}
-                        title="Software Engineer Intern"
-                        bullet={
-                            <Avatar className={classes.companyIcon} src={dayforceIcon} />
-                        }
-                    >
-                        <Text size="sm">Dayforce</Text>
-                        <Text size="xs" mt={4}>January 2024 - April 2024</Text>
-                    </Timeline.Item>
-
-                    <Timeline.Item 
-                        className={classes.fadeInNode}
-                        title="Software Engineer"
-                        bullet={
-                            <Avatar className={classes.companyIcon} src={khergIcon} />
-                        }
-                    >
-                        <Text size="sm">Kidney Health Education and Research Group</Text>
-                        <Text size="xs" mt={4}>September 2023 - Present</Text>
-                    </Timeline.Item>
-
-                    <Timeline.Item 
-                        className={classes.fadeInNode}
-                        title="Software Engineer Intern"
-                        bullet={
-                            <Avatar className={classes.companyIcon} src={uhnIcon} />
-                        }
-                    >
-                        <Text size="sm">University Health Network</Text>
-                        <Text size="xs" mt={4}>May 2023 - August 2023</Text>
-                    </Timeline.Item>
-
-                    {/* <Timeline.Item 
-                        className={classes.fadeInNode}
-                        title="Milliken Mills High School"
-                        bullet={
-                            <Avatar className={classes.companyIcon} src={mmhsIcon} />
-                        }
-                    >
-                        <Text size="sm">Computer Lab Assistant</Text>
-                        <Text size="xs" mt={4}>January 2018 - March 2020</Text>
-                    </Timeline.Item> */}
+                    {experienceList.map((item, idx) => (
+                        <Timeline.Item 
+                            className={classes.fadeInNode}
+                            title={item.title}
+                            bullet={
+                                <Avatar className={classes.companyIcon} src={item.icon} />
+                            }
+                        >
+                            <Text size="sm">{item.company}</Text>
+                            <Text size="xs" mt={4}>{item.date}</Text>
+                        </Timeline.Item>
+                    ))}
                     </Timeline>
             </div>
         </div>
