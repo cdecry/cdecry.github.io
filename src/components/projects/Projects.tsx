@@ -16,8 +16,9 @@ const Projects = () => {
         }
     }, []);
     
-    const assetLoc = "../../assets/experience"
-    const miraiBanner = require(`${assetLoc}/mirai-banner.png`);
+    const miraiBanner = require(`../../assets/projects/mirai-banner.png`);
+    const tabsBanner = require(`../../assets/projects/tabs-screenshot.png`);
+    const planetBanner = require(`../../assets/projects/planet-banner.png`);
 
     const ghUser = "cdecry";
     const ghUserIcon = "https://avatars.githubusercontent.com/u/35664551"
@@ -25,7 +26,7 @@ const Projects = () => {
     const projectList = [
         { 
             id: 0, 
-            name: 'Mirai', 
+            name: '🔮 Mirai', 
             description: `
             An MMORPG virtual world built with Unity and C#. Features include login/signup, multiplayer interaction, inventory system, chat system, 
             room location management, and buddy system.
@@ -35,20 +36,21 @@ const Projects = () => {
         },
         { 
             id: 1, 
-            name: 'Tabs', 
+            name: '📁 Tabs: Household Management', 
             description: `
-            Tabs is an iOS/Android app for household and roommate management. 
-            Users are able to manage inventory and finances, create/schedule 
+            An iOS/Android app for household + roommate management. 
+            Manage inventory, finances, create/schedule 
             chores and more.`,
-            bannerUrl: defaultBannerUrl,
+            bannerUrl: tabsBanner,
             tags: ["React Native", "TypeScript", "MongoDB", "full stack"]
         },
         { 
             id: 2, 
-            name: 'Project 3', 
-            description: 'This is the third item',
-            bannerUrl: defaultBannerUrl,
-            tags: ["tag 1"]
+            name: '🪐 Planet Bot', 
+            description: `A planning & team management chat that allows you to streamline Trello operations in 
+            your Discord server!`,
+            bannerUrl: planetBanner,
+            tags: ["C#", ".NET", "Entity Framework Core"]
         },
         { 
             id: 3, 

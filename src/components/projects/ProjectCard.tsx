@@ -44,7 +44,7 @@ const ProjectCard = (props: ProjectCardProps) => {
 
         <Text fw={700} className={classes.title} mt="xs">{props.name}</Text>
 
-        <Text fz="sm" c="dimmed" lineClamp={3}>{props.description}</Text>
+        <Text fz={"sm"} c="dimmed" lineClamp={3}>{props.description}</Text>
 
         <Card.Section className={classes.footer}>
             <Group justify="space-between" className={classes.footer}>
