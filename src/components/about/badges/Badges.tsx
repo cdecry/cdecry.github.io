@@ -110,7 +110,7 @@ const Badges = () => {
         .map((category, index) => (
             <button
                 key={index}
-                className={`${classes.pillButton} ${selectedCategories.includes(category) ? `active` : ''}`}
+                className={`${classes.pillButton} ${selectedCategories.includes(category) ? classes.pillButtonActive : ''}`}
                 onClick={() => {buttonClickSound.play(); toggleSelect(category);}}
             >
                 {category}

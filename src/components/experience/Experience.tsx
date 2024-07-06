@@ -8,38 +8,50 @@ const dayforceIcon = require('../../assets/experience/dayforce-icon.png');
 const khergIcon = require('../../assets/experience/kherg-icon.png');
 const uhnIcon = require('../../assets/experience/uhn-icon.png');
 const uoftIcon = require('../../assets/experience/uoft-icon-bg.png');
+const microsoftIcon = require('../../assets/experience/microsoft-icon.jpeg');
 const mmhsIcon = require('../../assets/experience/mmhs-icon.png');
 
 const Experience = () => {
     
     useEffect(() => {
-        // const nodes = document.querySelectorAll('.fadeInNode');
+        
+        const nodes = document.querySelectorAll(`.${classes.fadeInNode}`);
+
         const content = document.querySelector('.content');
         if (content) {
             setTimeout(() => {
               content.classList.add('fade-in');
             }, 50);
         }
-        // nodes.forEach((node, index) => {
-        //     setTimeout(() => {
-        //       node.classList.add('fade-in');
-        //     }, (nodes.length - index) * 100);
-        // });
+        console.log(nodes);
+        nodes.forEach((node, index) => {
+            console.log(node);
+            setTimeout(() => {
+                node.classList.add(classes.fadeIn);
+            }, (nodes.length - index) * 100);
+        });
     }, []);
 
     const experienceList = [
         {
-            title: "Software Engineering Intern",
+            title: "Incoming Software Engineering Intern",
+            company: "Microsoft",
+            icon: microsoftIcon,
+            date: "May 2025 - Aug 2025",
+            location: "Vancouver, BC"
+        },
+        {
+            title: "Incoming Software Engineering Intern",
             company: "HubSpot",
             icon: hubspotIcon,
-            date: "September 2024 - December 2024",
+            date: "Sep 2024 - Dec 2024",
             location: "Cambridge, MA"
         },
         {
-            title: "Software Engineering Intern",
+            title: "Software Engineer Intern",
             company: "Dayforce",
             icon: dayforceIcon,
-            date: "May 2024 - Present",
+            date: "Jan 2024 - Present",
             location: "Toronto, ON"
         },
         {
@@ -49,25 +61,25 @@ const Experience = () => {
             date: "May 2024 - Present",
             location: "Toronto, ON"
         },
-        {
-            title: "Software Engineering Intern",
-            company: "Dayforce",
-            icon: dayforceIcon,
-            date: "January 2024 - April 2024",
-            location: "Toronto, ON"
-        },
+        // {
+        //     title: "Software Engineering Intern",
+        //     company: "Dayforce",
+        //     icon: dayforceIcon,
+        //     date: "January 2024 - April 2024",
+        //     location: "Toronto, ON"
+        // },
         {
             title: "Software Engineer",
-            company: "Kidney Health Education and Research Group",
+            company: "KHERG",
             icon: khergIcon,
-            date: "September 2023 - Present",
+            date: "Sep 2023 - Present",
             location: "Toronto, ON"
         },
         {
-            title: "Software Engineeing Intern",
+            title: "Software Engineer Intern",
             company: "University Health Network",
             icon: uhnIcon,
-            date: "May 2023 - August 2024",
+            date: "May 2023 - Aug 2024",
             location: "Toronto, ON"
         }
     ]
@@ -81,7 +93,7 @@ const Experience = () => {
                 </Text>
                 <Space h="lg" />
                 <Space h="sm" />
-                <Timeline color="#ea80fc" reverseActive active={4} bulletSize={24} lineWidth={6} className="exp-timeline">
+                <Timeline color="#ea80fc" reverseActive active={3} bulletSize={24} lineWidth={6} className="exp-timeline">
                     {experienceList.map((item, idx) => (
                         <Timeline.Item 
                             className={classes.fadeInNode}
@@ -92,6 +104,7 @@ const Experience = () => {
                         >
                             <Text size="sm">{item.company}</Text>
                             <Text size="xs" mt={4}>{item.date}</Text>
+                            {/* <Text size="xs" mt={4}>{item.location}</Text> */}
                         </Timeline.Item>
                     ))}
                     </Timeline>

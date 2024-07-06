@@ -85,9 +85,10 @@
     cursor: pointer;
 }
 
-.pillButton.active {
-    color: #f3f4f6;
-    background-color: #1f2937;
+.pillButtonActive {
+    /* color: #f3f4f6; */
+    color: var(--tw-slate-900);
+    background-color: var(--tw-gray-800);
 }
 
 @media (min-width: 0px) {

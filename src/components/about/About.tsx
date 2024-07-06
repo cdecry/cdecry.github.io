@@ -24,7 +24,7 @@ const About = () => {
                         <Text>
                             hi! my name is <em id='crystal'>crystal</em>, and i'm a 
                             fourth-year computer science co-op student @ the University of 
-                            Toronto, passionate about software development and its innovative 
+                            Toronto, passionate about software and game development and its innovative 
                             (and fun!) applications. <br></br>
                         </Text>
                         <Space h='sm'/>
