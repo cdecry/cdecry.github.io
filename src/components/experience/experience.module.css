@@ -10,8 +10,8 @@
 
 .fadeInNode {
     opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 1s ease;
 }
 
 .fadeIn {

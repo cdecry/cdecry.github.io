@@ -188,8 +188,9 @@ body {
 
         
     .nav-button, .nav-button-active {
-        width: 100px;
-        height: 30px;
+        padding: 0px;
+        width: 110px;
+        height: 34px;
     }
 }
 
@@ -203,6 +204,11 @@ body {
     .container {
         /* background-color: green; */
     }
+
+    /* .nav-button, .nav-button-active {
+        padding: 0px;
+        font-size: 12px;
+    } */
 }
 
 @media screen and (min-width: 1024px) {
@@ -219,6 +225,7 @@ body {
     }
 
     .nav-button, .nav-button-active {
+        font-size: 14px;
         width: 140px;
         height: 40px;
     }

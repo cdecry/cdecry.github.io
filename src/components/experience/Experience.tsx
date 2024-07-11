@@ -23,23 +23,23 @@ const Experience = () => {
               content.classList.add('fade-in');
             }, 50);
         }
-        console.log(nodes);
+
         nodes.forEach((node, index) => {
             console.log(node);
             setTimeout(() => {
                 node.classList.add(classes.fadeIn);
-            }, (nodes.length - index) * 100);
+            }, (index) * 200);
         });
     }, []);
 
     const experienceList = [
-        {
-            title: "Incoming Software Engineering Intern",
-            company: "Microsoft",
-            icon: microsoftIcon,
-            date: "May 2025 - Aug 2025",
-            location: "Vancouver, BC"
-        },
+        // {
+        //     title: "Incoming Software Engineering Intern",
+        //     company: "Microsoft",
+        //     icon: microsoftIcon,
+        //     date: "May 2025 - Aug 2025",
+        //     location: "Vancouver, BC"
+        // },
         {
             title: "Incoming Software Engineering Intern",
             company: "HubSpot",
