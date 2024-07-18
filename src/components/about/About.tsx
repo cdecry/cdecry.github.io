@@ -37,7 +37,7 @@ const About = () => {
                         </Text>
                         <Space h='sm'/>
                         <Text>
-                            {"this website is still a work-in-progress, but feel free to look around 😎"}
+                            {"this page is still a work-in-progress, but feel free to look around! 😎"}
                         </Text>
                         {/* <Space h='sm'/>
                         <Text>
