@@ -44,12 +44,16 @@ const CherryBlossomGame = () => {
             ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
         }
 
+        const getRandomFontSize = (min: number, max: number) => {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        };
+
         const drawCherryBlossoms = () => {
             cherryBlossoms.forEach(blossom => {
                 if (!ctx) return;
 
                 ctx.fillStyle = `rgba(255, 192, 203, ${blossom.opacity})`;
-                ctx.font = '12px Arial';
+                ctx.font = `${blossom.size}px Arial`;
                 ctx.fillText('🌸', blossom.x, blossom.y);
             });
         }
@@ -77,7 +81,8 @@ const CherryBlossomGame = () => {
                     x: Math.random() * (canvas.width - 2),
                     y: 0,
                     opacity: 1,
-                    caught: false
+                    caught: false,
+                    size: getRandomFontSize(8, 15)
                 });
             }
         }

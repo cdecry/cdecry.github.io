@@ -190,7 +190,7 @@ body {
         margin-left: 0px;
     }
 
-    .profile {
+    .profile, .cbGame {
         display: none;
     }
 
@@ -230,6 +230,13 @@ body {
         min-width: 300px;
         max-width: 300px;
         height: 380px;
+    }
+
+    .cbGame {
+        display: block;
+        min-width: 300px;
+        max-width: 300px;
+        height: 200px;
     }
 
     .nav-button, .nav-button-active {
