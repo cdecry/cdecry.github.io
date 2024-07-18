@@ -1,6 +1,6 @@
 .projectsGrid {
     /* border: 1px solid red; */
-    padding-top: 20px;
+    padding-top: 15px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;

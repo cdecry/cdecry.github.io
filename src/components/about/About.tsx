@@ -1,6 +1,7 @@
 import {Text, Space } from "@mantine/core";
 import { useEffect } from "react";
 import BadgesComponent from "./badges/Badges";
+import CherryBlossomGame from "../main/CherryBlossomGame";
 
 const About = () => {
     useEffect(() => {

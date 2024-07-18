@@ -102,6 +102,15 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.cbGame {
+    background-color: var(--tw-slate-900);
+    border-radius: 10px;
+    height: 200px;
+    min-width: 300px;
+    max-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .tab {
     overflow-y: scroll;
     overflow-x: hidden;

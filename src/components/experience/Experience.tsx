@@ -92,7 +92,6 @@ const Experience = () => {
                     &#9135; work experience
                 </Text>
                 <Space h="lg" />
-                <Space h="sm" />
                 <Timeline color="#ea80fc" reverseActive active={3} bulletSize={24} lineWidth={6} className="exp-timeline">
                     {experienceList.map((item, idx) => (
                         <Timeline.Item 
