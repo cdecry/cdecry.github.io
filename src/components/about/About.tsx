@@ -1,24 +1,31 @@
 import {Text, Space } from "@mantine/core";
 import { useEffect } from "react";
 import BadgesComponent from "./badges/Badges";
-import CherryBlossomGame from "../main/CherryBlossomGame";
+import classes from './about.module.css';
 
 const About = () => {
     useEffect(() => {
+        const nodes = document.querySelectorAll(`.${classes.fadeInNode}`);
         const content = document.querySelector('.content');
-        
+
         if (content) {
             setTimeout(() => {
-                content.classList.add('fade-in');
+              content.classList.add('fade-in');
             }, 300);
         }
+
+        nodes.forEach((node, index) => {
+            setTimeout(() => {
+                node.classList.add(classes.fadeIn);
+            }, (index) * 600);
+        });
     }, []);
 
     return (
         <div className='tab'>
             <div className='content'>
                 <div>
-                    <div>
+                    <div className={classes.fadeInNode}>
                         <Text size="xl" fw={800}>
                             &#9135; welcome
                         </Text>
@@ -42,7 +49,7 @@ const About = () => {
                 </div>
                 <Space h='md'/>
                 <div>
-                    <div>
+                    <div className={classes.fadeInNode}>
                         <Text size="xl" fw={800}>
                             &#9135; skills / technologies
                         </Text>

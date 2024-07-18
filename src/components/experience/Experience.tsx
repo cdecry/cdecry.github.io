@@ -25,7 +25,6 @@ const Experience = () => {
         }
 
         nodes.forEach((node, index) => {
-            console.log(node);
             setTimeout(() => {
                 node.classList.add(classes.fadeIn);
             }, (index) * 200);

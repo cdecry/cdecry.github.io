@@ -16,3 +16,14 @@
 .madeWithIcon:hover {
     transform: scale(1.1);
 }
+
+.fadeInNode {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 1.3s ease, transform 2.7s ease;
+}
+
+.fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+}
