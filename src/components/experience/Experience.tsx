@@ -33,13 +33,13 @@ const Experience = () => {
     }, []);
 
     const experienceList = [
-        // {
-        //     title: "Incoming Software Engineering Intern",
-        //     company: "Microsoft",
-        //     icon: microsoftIcon,
-        //     date: "May 2025 - Aug 2025",
-        //     location: "Vancouver, BC"
-        // },
+        {
+            title: "Incoming Software Engineering Intern",
+            company: "Microsoft",
+            icon: microsoftIcon,
+            date: "Jan 2025 - Apr 2025",
+            location: "Vancouver, BC"
+        },
         {
             title: "Incoming Software Engineering Intern",
             company: "HubSpot",

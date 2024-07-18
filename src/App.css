@@ -58,7 +58,7 @@ body {
     --d:100px;
     --angle:86deg;
     border-radius: 8px;
-    background-color: transparent;
+    background-color: var(--tw-slate-900);
     border: 1px dashed rgba(0, 0, 0, 0.2);
     width: 120px;
     height: 40px;
@@ -69,7 +69,6 @@ body {
     --d:100px;
     --angle:86deg;
     border-radius: 8px;
-    background-color: transparent;
     /* border: 1px solid #a98cedff; */
     /* color: black; */
     background: repeating-linear-gradient(var(--angle), #ea80fc, #b44ccb, #ea80fc var(--d));

@@ -5,6 +5,7 @@ import AboutComponent from '../about/About';
 import ExperienceComponent from '../experience/Experience';
 import ProjectsComponent from '../projects/Projects';
 import ThemeSwitch from './ThemeSwitch';
+import JournalComponent from '../journal/Journal';
 
 type ContainerProps = {
     currentTab: string;
@@ -31,6 +32,7 @@ const Container = () => {
                 {currentTab === 'about me' && <AboutComponent />}
                 {currentTab === 'experience' && <ExperienceComponent />}
                 {currentTab === 'projects' && <ProjectsComponent />}
+                {currentTab === 'journal' && <JournalComponent />}
             </div>
 
         </Card>
