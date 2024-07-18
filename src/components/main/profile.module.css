@@ -1,0 +1,8 @@
+.avatar {
+    border: rem(2px) solid var(--mantine-color-body);
+}
+
+.socials {
+    padding: 0px;
+    border: 1px solid red;
+}
