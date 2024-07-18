@@ -21,7 +21,7 @@ const Profile = () => {
                 className={classes.avatar}
             />
     
-            <Text ta="center" fz="lg" fw={500} mt="sm">
+            <Text ta="center" fz="lg" fw={700} mt="sm">
                 Crystal Huang
             </Text>
             <Text size='sm' ta='center' c='dimmed'>@cdecry</Text>

@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-        <MantineProvider defaultColorScheme='dark' cssVariablesResolver={Resolver}>
+        <MantineProvider defaultColorScheme='light' cssVariablesResolver={Resolver}>
             <App />
         </MantineProvider>
   </React.StrictMode>

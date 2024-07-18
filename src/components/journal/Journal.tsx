@@ -19,7 +19,7 @@ const JournalComponent = () => {
                     <div>
                         
                         <Text>
-                            oops! there's nothing here yet.. 😔 stay tuned!
+                            oops! there's nothing here yet.. 🤫 stay tuned!
                         </Text>
                         
                     </div>

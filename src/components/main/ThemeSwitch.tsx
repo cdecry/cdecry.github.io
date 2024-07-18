@@ -1,4 +1,4 @@
-import { Switch, useMantineTheme, rem, useMantineColorScheme } from '@mantine/core';
+import { Switch, useMantineTheme, rem, useMantineColorScheme, Tooltip } from '@mantine/core';
 import { IconSun, IconMoonStars } from '@tabler/icons-react';
 
 const ThemeSwitch = () => {
@@ -22,13 +22,18 @@ const ThemeSwitch = () => {
         />
     );
 
-    return <Switch 
-        size="xl" 
-        color="dark.4" 
-        onLabel={sunIcon} 
-        offLabel={moonIcon} 
-        onChange={toggleColorScheme}
-    />;
+    return <Tooltip label={`coming soon 😔`} position="top" offset={-33}>
+        <div>
+            <Switch 
+                disabled
+                size="xl" 
+                color="dark.4" 
+                onLabel={sunIcon} 
+                offLabel={moonIcon} 
+                onChange={toggleColorScheme}
+            />
+        </div>
+    </Tooltip>;
 }
 
 export default ThemeSwitch;
