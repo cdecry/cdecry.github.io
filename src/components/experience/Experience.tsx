@@ -39,13 +39,13 @@ const Experience = () => {
         //     date: "Jan 2025 - Apr 2025",
         //     location: "Vancouver, BC"
         // },
-        {
-            title: "Incoming Software Engineering Intern",
-            company: "HubSpot",
-            icon: hubspotIcon,
-            date: "Sep 2024 - Dec 2024",
-            location: "Cambridge, MA"
-        },
+        // {
+        //     title: "Incoming Software Engineering Intern",
+        //     company: "HubSpot",
+        //     icon: hubspotIcon,
+        //     date: "Sep 2024 - Dec 2024",
+        //     location: "Cambridge, MA"
+        // },
         {
             title: "Software Engineer Intern",
             company: "Dayforce",
