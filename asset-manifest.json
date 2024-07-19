@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.c2242c64.css",
-    "main.js": "/static/js/main.a63ce722.js",
-    "static/js/453.75ec96f5.chunk.js": "/static/js/453.75ec96f5.chunk.js",
-    "static/media/MPLUSRounded1c-Medium.ttf": "/static/media/MPLUSRounded1c-Medium.84b104e7bd5d1ad98d5d.ttf",
-    "static/media/miniweb-banner.png": "/static/media/miniweb-banner.0081a3bad85b9cc26cd7.png",
-    "static/media/tabs-banner.gif": "/static/media/tabs-banner.698127f0733104bd2a6f.gif",
-    "static/media/iportfolio-banner.gif": "/static/media/iportfolio-banner.e0195d419c1c48dc079b.gif",
-    "static/media/venue-banner.png": "/static/media/venue-banner.eae41cc0bdce6346de14.png",
-    "static/media/snake-banner.gif": "/static/media/snake-banner.44909da12cfffb6751c0.gif",
-    "static/media/planet-banner.png": "/static/media/planet-banner.4bdd7736cb9a0cd7f838.png",
-    "static/media/purple-bg.png": "/static/media/purple-bg.bfa35d048e667c9e01e3.png",
-    "static/media/uoft-icon-bg.png": "/static/media/uoft-icon-bg.defc1bb566787aa66d15.png",
-    "static/media/mirai-banner.png": "/static/media/mirai-banner.f87bea670d59ad067f59.png",
-    "static/media/dayforce-icon.png": "/static/media/dayforce-icon.a4fbf45f6699d070ad34.png",
-    "static/media/mmhs-icon.png": "/static/media/mmhs-icon.d2fd4e3b7fa159d06631.png",
-    "index.html": "/index.html",
-    "main.c2242c64.css.map": "/static/css/main.c2242c64.css.map",
-    "main.a63ce722.js.map": "/static/js/main.a63ce722.js.map",
-    "453.75ec96f5.chunk.js.map": "/static/js/453.75ec96f5.chunk.js.map"
+    "main.css": "./static/css/main.7a0bf640.css",
+    "main.js": "./static/js/main.1b118e17.js",
+    "static/js/453.75ec96f5.chunk.js": "./static/js/453.75ec96f5.chunk.js",
+    "static/media/MPLUSRounded1c-Medium.ttf": "./static/media/MPLUSRounded1c-Medium.84b104e7bd5d1ad98d5d.ttf",
+    "static/media/miniweb-banner.png": "./static/media/miniweb-banner.0081a3bad85b9cc26cd7.png",
+    "static/media/tabs-banner.gif": "./static/media/tabs-banner.698127f0733104bd2a6f.gif",
+    "static/media/iportfolio-banner.gif": "./static/media/iportfolio-banner.e0195d419c1c48dc079b.gif",
+    "static/media/venue-banner.png": "./static/media/venue-banner.eae41cc0bdce6346de14.png",
+    "static/media/snake-banner.gif": "./static/media/snake-banner.44909da12cfffb6751c0.gif",
+    "static/media/planet-banner.png": "./static/media/planet-banner.4bdd7736cb9a0cd7f838.png",
+    "static/media/purple-bg.png": "./static/media/purple-bg.bfa35d048e667c9e01e3.png",
+    "static/media/uoft-icon-bg.png": "./static/media/uoft-icon-bg.defc1bb566787aa66d15.png",
+    "static/media/mirai-banner.png": "./static/media/mirai-banner.f87bea670d59ad067f59.png",
+    "static/media/dayforce-icon.png": "./static/media/dayforce-icon.a4fbf45f6699d070ad34.png",
+    "static/media/mmhs-icon.png": "./static/media/mmhs-icon.d2fd4e3b7fa159d06631.png",
+    "index.html": "./index.html",
+    "main.7a0bf640.css.map": "./static/css/main.7a0bf640.css.map",
+    "main.1b118e17.js.map": "./static/js/main.1b118e17.js.map",
+    "453.75ec96f5.chunk.js.map": "./static/js/453.75ec96f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2242c64.css",
-    "static/js/main.a63ce722.js"
+    "static/css/main.7a0bf640.css",
+    "static/js/main.1b118e17.js"
   ]
 }
