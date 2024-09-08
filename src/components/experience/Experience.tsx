@@ -39,25 +39,25 @@ const Experience = () => {
         //     date: "Jan 2025 - Apr 2025",
         //     location: "Vancouver, BC"
         // },
-        // {
-        //     title: "Incoming Software Engineering Intern",
-        //     company: "HubSpot",
-        //     icon: hubspotIcon,
-        //     date: "Sep 2024 - Dec 2024",
-        //     location: "Cambridge, MA"
-        // },
+        {
+            title: "Software Engineering Intern",
+            company: "HubSpot",
+            icon: hubspotIcon,
+            date: "Sep 2024 - Present",
+            location: "Cambridge, MA"
+        },
         {
             title: "Software Engineer Intern",
             company: "Dayforce",
             icon: dayforceIcon,
-            date: "Jan 2024 - Present",
+            date: "Jan 2024 - Aug 2024",
             location: "Toronto, ON"
         },
         {
             title: "Machine Learning Research Intern",
             company: "University of Toronto",
             icon: uoftIcon,
-            date: "May 2024 - Present",
+            date: "May 2024 - Aug 2024",
             location: "Toronto, ON"
         },
         // {
@@ -71,7 +71,7 @@ const Experience = () => {
             title: "Software Engineer",
             company: "KHERG",
             icon: khergIcon,
-            date: "Sep 2023 - Present",
+            date: "Sep 2023 - Aug 2024",
             location: "Toronto, ON"
         },
         {
