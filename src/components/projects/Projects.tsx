@@ -122,11 +122,10 @@ const Projects = () => {
             {/* <div className='header'></div> */}
             <div className='content'>
                 {/* <div className='projects-grid'> */}
-                {/* <Text>
+                <Text>
                     here's a portfolio showcasing a few of the projects i've worked 
-                    on in the past. it's constantly evolving, so feel free to head 
-                    over to my GitHub for even more updates!
-                </Text> */}
+                    on. it's constantly evolving, so check out <a href="https://github.com/cdecry">my github</a> for lots more!
+                </Text>
                 <motion.div
                     className={classes.projectsGrid}
                     variants={container}
