@@ -38,9 +38,9 @@ const About = () => {
                         <Space h='sm'/>
                         <Text>
                         {"💼 i've recently interned as a software engineer at "}
-                        <a href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer"><b>Microsoft</b></a>,{" "}
-                        <a href="https://www.hubspot.com" target="_blank" rel="noopener noreferrer"><b>HubSpot</b></a>, and{" "}
-                        <a href="https://www.dayforce.com" target="_blank" rel="noopener noreferrer"><b>Dayforce</b></a>.
+                        <a href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer">Microsoft</a>,{" "}
+                        <a href="https://www.hubspot.com" target="_blank" rel="noopener noreferrer">HubSpot</a>, and{" "}
+                        <a href="https://www.dayforce.com" target="_blank" rel="noopener noreferrer">Dayforce</a>.
                         </Text>
                         <Space h='sm'/>
                         <Text>
