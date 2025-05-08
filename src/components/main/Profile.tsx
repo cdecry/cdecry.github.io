@@ -44,7 +44,7 @@ const Profile = () => {
                 <Text style={{ textAlign: 'center' }}>
                 </Text>
                 <Text size="sm" c="dimmed" ta='center'>
-                - seeking summer 2025 internships!
+                - seeking 2026 new grad roles!
                 </Text>
                 <Text size="sm" c="dimmed" ta='center'>
                 website currently under construction c:

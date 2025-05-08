@@ -37,6 +37,13 @@ const About = () => {
                         </Text>
                         <Space h='sm'/>
                         <Text>
+                        {"💼 i've recently interned as a software engineer at "}
+                        <a href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer"><b>Microsoft</b></a>,{" "}
+                        <a href="https://www.hubspot.com" target="_blank" rel="noopener noreferrer"><b>HubSpot</b></a>, and{" "}
+                        <a href="https://www.dayforce.com" target="_blank" rel="noopener noreferrer"><b>Dayforce</b></a>.
+                        </Text>
+                        <Space h='sm'/>
+                        <Text>
                             {"this page is still a work-in-progress, but feel free to look around! 😎"}
                         </Text>
                         {/* <Space h='sm'/>

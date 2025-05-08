@@ -34,6 +34,13 @@ const Experience = () => {
     const experienceList = [
         {
             title: "Incoming Software Engineering Intern",
+            company: "HubSpot",
+            icon: hubspotIcon,
+            date: "July 2025 - Dec 2025",
+            location: "Cambridge, MA"
+        },
+        {
+            title: "Software Engineering Intern",
             company: "Microsoft",
             icon: microsoftIcon,
             date: "Jan 2025 - Apr 2025",
@@ -91,7 +98,7 @@ const Experience = () => {
                     &#9135; work experience
                 </Text>
                 <Space h="lg" />
-                <Timeline color="#ea80fc" reverseActive active={4} bulletSize={24} lineWidth={6} className="exp-timeline">
+                <Timeline color="#ea80fc" reverseActive active={5} bulletSize={24} lineWidth={6} className="exp-timeline">
                     {experienceList.map((item, idx) => (
                         <Timeline.Item 
                             className={classes.fadeInNode}
